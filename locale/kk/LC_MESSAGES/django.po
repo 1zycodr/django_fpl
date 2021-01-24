@@ -1,0 +1,1598 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-09-24 14:59+0600\n"
+"PO-Revision-Date: 2020-09-18 04:04+0600\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: kk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+"X-Generator: Poedit 2.2\n"
+
+#: env/lib/python3.6/site-packages/ckeditor_uploader/templates/ckeditor/browse.html:5
+msgid "Select an image to embed"
+msgstr ""
+
+#: env/lib/python3.6/site-packages/ckeditor_uploader/templates/ckeditor/browse.html:27
+msgid "Browse for the image you want, then click 'Embed Image' to continue..."
+msgstr ""
+
+#: env/lib/python3.6/site-packages/ckeditor_uploader/templates/ckeditor/browse.html:29
+msgid ""
+"No images found. Upload images using the 'Image Button' dialog's 'Upload' "
+"tab."
+msgstr ""
+
+#: env/lib/python3.6/site-packages/ckeditor_uploader/templates/ckeditor/browse.html:50
+msgid "Images in: "
+msgstr ""
+
+#: env/lib/python3.6/site-packages/ckeditor_uploader/templates/ckeditor/browse.html:62
+#: env/lib/python3.6/site-packages/ckeditor_uploader/templates/ckeditor/browse.html:80
+msgid "Embed Image"
+msgstr ""
+
+#: env/lib/python3.6/site-packages/ckeditor_uploader/templates/ckeditor/browse.html:146
+msgid "Play Slideshow"
+msgstr ""
+
+#: env/lib/python3.6/site-packages/ckeditor_uploader/templates/ckeditor/browse.html:147
+msgid "Pause Slideshow"
+msgstr ""
+
+#: env/lib/python3.6/site-packages/ckeditor_uploader/templates/ckeditor/browse.html:148
+msgid "&lsaquo; Previous Photo"
+msgstr ""
+
+#: env/lib/python3.6/site-packages/ckeditor_uploader/templates/ckeditor/browse.html:149
+msgid "Next Photo &rsaquo;"
+msgstr ""
+
+#: env/lib/python3.6/site-packages/ckeditor_uploader/templates/ckeditor/browse.html:150
+msgid "Next &rsaquo;"
+msgstr ""
+
+#: env/lib/python3.6/site-packages/ckeditor_uploader/templates/ckeditor/browse.html:151
+msgid "&lsaquo; Prev"
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/views/templates/default_urlconf.html:7
+msgid "Django: the Web framework for perfectionists with deadlines."
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/views/templates/default_urlconf.html:346
+#, python-format
+msgid ""
+"View <a href=\"https://docs.djangoproject.com/en/%(version)s/releases/\" "
+"target=\"_blank\" rel=\"noopener\">release notes</a> for Django %(version)s"
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/views/templates/default_urlconf.html:368
+msgid "The install worked successfully! Congratulations!"
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/views/templates/default_urlconf.html:369
+#, python-format
+msgid ""
+"You are seeing this page because <a href=\"https://docs.djangoproject.com/en/"
+"%(version)s/ref/settings/#debug\" target=\"_blank\" rel=\"noopener"
+"\">DEBUG=True</a> is in your settings file and you have not configured any "
+"URLs."
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/views/templates/default_urlconf.html:384
+msgid "Django Documentation"
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/views/templates/default_urlconf.html:385
+msgid "Topics, references, &amp; how-to’s"
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/views/templates/default_urlconf.html:396
+msgid "Tutorial: A Polling App"
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/views/templates/default_urlconf.html:397
+msgid "Get started with Django"
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/views/templates/default_urlconf.html:408
+msgid "Django Community"
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/views/templates/default_urlconf.html:409
+msgid "Connect, get help, or contribute"
+msgstr ""
+
+#: web/templates/404.html:16 web/templates/web/404.html:34
+#: web/templates/web/404page.html:34
+msgid "404"
+msgstr ""
+
+#: web/templates/404.html:18 web/templates/web/404.html:36
+#: web/templates/web/404page.html:36
+#, fuzzy
+#| msgid "Стратегические направления"
+msgid "Страница не найдена"
+msgstr "Сайт парақшасы табылмады"
+
+#: web/templates/404.html:20 web/templates/web/404.html:38
+#: web/templates/web/404page.html:38
+msgid "Вернуться назад"
+msgstr "Кайту"
+
+#: web/templates/web/active_page.html:36 web/templates/web/actives_page.html:37
+#: web/templates/web/index.html:137
+msgid "Тип торгов"
+msgstr "Сауда түрі"
+
+#: web/templates/web/active_page.html:37 web/templates/web/actives_page.html:38
+#: web/templates/web/index.html:138
+msgid "На повышение цены"
+msgstr "Бағаны жоғарлату"
+
+#: web/templates/web/active_page.html:38 web/templates/web/actives_page.html:39
+#: web/templates/web/index.html:139
+msgid "На понижение цены"
+msgstr "Бағаны төмендету"
+
+#: web/templates/web/active_page.html:41 web/templates/web/actives_page.html:42
+#: web/templates/web/actives_page.html:61 web/templates/web/index.html:145
+msgid "Категории"
+msgstr "Санаттар"
+
+#: web/templates/web/active_page.html:47 web/templates/web/actives_page.html:48
+#: web/templates/web/index.html:151
+msgid "Регионы"
+msgstr "Аймақтар"
+
+#: web/templates/web/active_page.html:54 web/templates/web/actives_page.html:55
+msgid "ПОИСК"
+msgstr "ІЗДЕУ"
+
+#: web/templates/web/active_page.html:68
+msgid "Цена:"
+msgstr "Бағасы:"
+
+#: web/templates/web/active_page.html:82
+msgid "Добавлено"
+msgstr "Қосылды"
+
+#: web/templates/web/active_page.html:92
+msgid "Описание"
+msgstr "Сипаттама"
+
+#: web/templates/web/active_page.html:108
+#: web/templates/web/active_page.html:135
+msgid "Дополнительная информация"
+msgstr "Rосымша ақпарат"
+
+#: web/templates/web/active_page.html:115
+#: web/templates/web/actives_page.html:98 web/templates/web/search-page.html:63
+msgid "Дата проведения торгов:"
+msgstr "Сауда-саттық күні:"
+
+#: web/templates/web/active_page.html:120
+#: web/templates/web/actives_page.html:103
+#: web/templates/web/search-page.html:68
+msgid "Минимальная цена:"
+msgstr "Минималды баға:"
+
+#: web/templates/web/active_page.html:126
+msgid "Шаг 2: Регистрация и участие на торгах"
+msgstr "2-қадам: Тіркеу және сауда-саттық"
+
+#: web/templates/web/actives_page.html:7 web/templates/web/actives_page.html:29
+msgid "Реализация имущества"
+msgstr "Меншікті сату"
+
+#: web/templates/web/actives_page.html:35 web/templates/web/index.html:135
+msgid "Поиск по слову"
+msgstr "Іздеу"
+
+#: web/templates/web/akti.html:7 web/templates/web/akti.html:29
+#: web/templates/web/includes/footer.html:70
+#: web/templates/web/includes/header.html:105
+#: web/templates/web/includes/header.html:175
+msgid "Нормативно-правовая база"
+msgstr "Нормативтік-құқықтық база"
+
+#: web/templates/web/akti.html:33 web/templates/web/akti.html:37
+msgid "Устав акционерного общества «Фонд проблемных кредитов»"
+msgstr "«Проблемалық несиелер қоры» акционерлік қоғамының жарғысы"
+
+#: web/templates/web/akti.html:42 web/templates/web/akti.html:46
+msgid ""
+"Положение о Комитете Совета директоров акционерного общества «Фонд "
+"проблемных кредитов» по рассмотрению вопросов внутреннего аудита"
+msgstr ""
+"Ішкі аудит мәселелерін қарау үшін «Проблемалық несиелер қоры» акционерлік "
+"қоғамы Директорлар кеңесінің комитеті туралы ереже"
+
+#: web/templates/web/akti.html:52 web/templates/web/akti.html:56
+msgid ""
+"Положение о Комитете Совета директоров акционерного общества «Фонд "
+"проблемных кредитов» по рассмотрению вопросов стратегического планирования, "
+"кадров и вознаграждений, социальных вопросов"
+msgstr ""
+"Стратегиялық жоспарлау, кадрлар мен еңбекақы төлеу, әлеуметтік мәселелерді "
+"қарау үшін «Проблемалық несиелер қоры» акционерлік қоғамы Директорлар "
+"кеңесінің комитеті туралы ереже"
+
+#: web/templates/web/audit.html:7 web/templates/web/audit.html:29
+#: web/templates/web/includes/header.html:109
+#: web/templates/web/includes/header.html:179
+msgid "Внешний аудит"
+msgstr "Сыртқы аудит"
+
+#: web/templates/web/bp-rek.html:7 web/templates/web/bp-rek.html:29
+#: web/templates/web/includes/footer.html:91
+#: web/templates/web/includes/header.html:128
+#: web/templates/web/includes/header.html:198
+msgid ""
+"Реализация имущества и имущественных прав в рамках работы по правам "
+"требования"
+msgstr ""
+"Талап ету құқықтары жөніндегі жұмыс шеңберінде мүлікті және мүліктік "
+"құқықтарды іске асыру"
+
+#: web/templates/web/bp-rek.html:30 web/templates/web/build-page.html:30
+msgid "На данный момент нет имущества к реализации"
+msgstr "Қазіргі уақытта сатылатын мүлік жоқ"
+
+#: web/templates/web/build-page-divi.html:7
+#: web/templates/web/build-page-divi.html:29
+#: web/templates/web/includes/header.html:103
+#: web/templates/web/includes/header.html:173
+msgid "Дивидендная политика"
+msgstr "Дивидендтік саясаты"
+
+#: web/templates/web/build-page-divi.html:31
+msgid "На реконструкции"
+msgstr "Қайта құру кезеңінде"
+
+#: web/templates/web/build-page-razv.html:7
+#: web/templates/web/build-page-razv.html:29
+#: web/templates/web/includes/header.html:104
+#: web/templates/web/includes/header.html:174
+msgid "Устойчивое развитие"
+msgstr "Тұрақты даму"
+
+#: web/templates/web/build-page-razv.html:31
+#, fuzzy
+#| msgid "На реконструкции"
+msgid "Страница на реконструкции"
+msgstr "Қайта құру кезеңінде"
+
+#: web/templates/web/build-page.html:7 web/templates/web/build-page.html:29
+#: web/templates/web/includes/header.html:126
+#: web/templates/web/includes/header.html:196
+msgid "Перечень имущества дочерних организаций к реализации"
+msgstr "Еншілес ұйымдарынын сатылатын мүлкінің тізбесі"
+
+#: web/templates/web/comitet-func.html:7 web/templates/web/comitet-func.html:30
+#, fuzzy
+#| msgid "Комитеты Совета директоров"
+msgid "Комитеты совета директоров и их функции"
+msgstr "Директорлар кеңесінің комитеттері"
+
+#: web/templates/web/comitet-func.html:34
+msgid ""
+"Для проведения детального анализа и выработки рекомендаций по кругу наиболее "
+"важных вопросов до их рассмотрения на заседании Совета директоров в Фонде "
+"созданы следующие комитеты при Совете директоров."
+msgstr ""
+"Егжей-тегжейлі талдау жүргізу және аса маңызды мәселелер шеңбері бойынша "
+"ұсынымдар әзірлеу үшін оларды Директорлар кеңесінің отырысында қарағанға "
+"дейін Қорда Директорлар кеңесінің жанынан мынадай комитеттер құрылды."
+
+#: web/templates/web/comitet-func.html:40
+msgid ""
+"Комитет совета директоров фонда по рассмотрению вопросов внутреннего аудита"
+msgstr ""
+"Қордың Директорлар кеңесінің Ішкі аудит мәселелерін қарау жөніндегі комитеті"
+
+#: web/templates/web/comitet-func.html:43
+msgid ""
+"Учрежден с целью организации эффективной системы контроля за финансово – "
+"хозяйственной деятельностью и соответствием деятельности Фонда "
+"законодательству и внутренним нормативным документам Фонда в целях повышения "
+"эффективности деятельности Фонда в долгосрочной перспективе. "
+msgstr ""
+"Ұзақ мерзімді перспективада Қор қызметінің тиімділігін арттыру мақсатында "
+"қаржы – шаруашылық қызметін және Қор қызметінің заңнамаға және Қордың ішкі "
+"нормативтік құжаттарына сәйкестігін бақылаудың тиімді жүйесін ұйымдастыру "
+"мақсатында құрылған "
+
+#: web/templates/web/comitet-func.html:45
+msgid ""
+"Основными задачами являются разработка и предоставление рекомендаций Совету "
+"директоров для принятия решений по формированию и реализации политики Фонда "
+"по вопросам контроля в области финансово-хозяйственной деятельности Фонда, "
+"вопросам управления рисками, внутреннего и внешнего аудита Фонда."
+msgstr ""
+"Негізгі міндеттері – Қордың қаржы-шаруашылық қызметі саласындағы бақылау "
+"мәселелері, тәуекелдерді басқару, Қордың ішкі және сыртқы аудиті мәселелері "
+"бойынша Қордың саясатын қалыптастыру және іске асыру жөнінде шешімдер "
+"қабылдау үшін Директорлар кеңесіне ұсынымдар әзірлеу және ұсыну болып "
+"табылады."
+
+#: web/templates/web/comitet-func.html:48
+#: web/templates/web/comitet-func.html:71
+msgid "Текущий состав Комитета"
+msgstr "Комитеттің ағымдағы құрамы"
+
+#: web/templates/web/comitet-func.html:52
+#: web/templates/web/comitet-func.html:74
+msgid "Председатель Комитета"
+msgstr "Комитет Төрағасы"
+
+#: web/templates/web/comitet-func.html:53
+#: web/templates/web/rukovodstvo2.html:113
+msgid "Кенесарин Сагир Есенгулович"
+msgstr "Кенесарин Сағыр Есенғұлұлы"
+
+#: web/templates/web/comitet-func.html:55
+#: web/templates/web/comitet-func.html:76
+msgid "Члены Комитета"
+msgstr "Комитет мүшелері"
+
+#: web/templates/web/comitet-func.html:56
+msgid "Елшібаев Ержан Иманқұлұлы"
+msgstr "Елшібаев Ержан Иманқұлұлы"
+
+#: web/templates/web/comitet-func.html:57
+msgid "Турганалиев Елтинжал Рахматуллаевич."
+msgstr "Тұрғаналиев Елтінжал Рахматоллаұлы."
+
+#: web/templates/web/comitet-func.html:63
+msgid ""
+"Комитет Совета директоров Фонда по рассмотрению вопросов стратегического "
+"планирования, кадров и вознаграждений, социальных вопросов."
+msgstr ""
+"Қордың Директорлар кеңесінің Стратегиялық жоспарлау, кадрлар және сыйақылар, "
+"әлеуметтік мәселелер мәселелерін қарау жөніндегі комитеті."
+
+#: web/templates/web/comitet-func.html:68
+msgid ""
+"Создан с целью организации в Фонде системы социальных гарантий и льгот, "
+"привлечения высококвалифицированных работников, обладающих необходимым "
+"опытом работы, предоставления привлекаемым сотрудникам конкурентных условий "
+"на рынке труда для последующей реализации ими стратегических целей Фонда, "
+"организации эффективной системы стратегического планирования деятельности "
+"Фонда и контроля за реализацией стратегии, стратегического плана в целях "
+"повышения эффективности деятельности Фонда в долгосрочной перспективе."
+msgstr ""
+"Қорда әлеуметтік кепілдіктер мен жеңілдіктер жүйесін ұйымдастыру, қажетті "
+"жұмыс тәжірибесі бар жоғары білікті қызметкерлерді тарту, тартылатын "
+"қызметкерлерге Қордың стратегиялық мақсаттарын кейіннен іске асыру үшін "
+"еңбек нарығында бәсекелестік жағдайлар беру, Қор қызметін стратегиялық "
+"жоспарлаудың тиімді жүйесін ұйымдастыру және ұзақ мерзімді перспективада Қор "
+"қызметінің тиімділігін арттыру мақсатында стратегияның, стратегиялық "
+"жоспардың іске асырылуын бақылау мақсатында құрылған."
+
+#: web/templates/web/comitet-func.html:75
+#: web/templates/web/rukovodstvo2.html:95
+msgid "Турганалиев Елтинжал Рахматуллаевич"
+msgstr "Тұрғаналиев Елтінжал Рахматоллаұлы"
+
+#: web/templates/web/comitet-func.html:77
+#: web/templates/web/sostav-pravlenia.html:57
+msgid "Тюреходжаева Инкар Абибуллаевна"
+msgstr "Төреходжаева Инкар Әбиболлақызы"
+
+#: web/templates/web/comitet-func.html:78
+#, fuzzy
+#| msgid "Тюреходжаева Инкар Абибуллаевна"
+msgid "Ауезбаева Тальмира Есимхановна"
+msgstr "Ауезбаева Тальмира Есимхановна"
+
+#: web/templates/web/comitet-func.html:83
+msgid ""
+"Основными задачами Комитета являются разработка и предоставление "
+"рекомендаций Совету директоров для принятия решений по формированию и "
+"реализации политики Фонда по вопросам определения стратегических целей "
+"(стратегии развития) Фонда, реализации социальных программ, обеспечения "
+"льгот и гарантий, развития корпоративных социальных программ, осуществления "
+"мероприятий по охране и технике безопасности труда, формирования кадровой "
+"политики и политики мотивации работников Фонда, условий оплаты труда и "
+"премирования работников."
+msgstr ""
+"Комитеттің негізгі міндеттері - Директорлар кеңесіне Қордың стратегиялық "
+"мақсаттарын (даму стратегиясын) айқындау, әлеуметтік бағдарламаларды іске "
+"асыру, жеңілдіктер мен кепілдіктер беру, корпоративтік әлеуметтік "
+"бағдарламаларды әзірлеу, қауіпсіздік пен технология бойынша шараларды жүзеге "
+"асыру бойынша саясатты қалыптастыру және жүзеге асыру бойынша шешімдер "
+"қабылдау бойынша ұсыныстар беру, еңбек қауіпсіздігі, кадрлық саясатты "
+"қалыптастыру және Қордың қызметкерлерін ынталандыру саясаты, еңбекке ақы "
+"төлеу шарттары және қызметкерлерге сыйлықақы беру."
+
+#: web/templates/web/contact.html:7 web/templates/web/includes/footer.html:45
+#: web/templates/web/includes/header.html:133
+#: web/templates/web/includes/header.html:203
+msgid "Контакты"
+msgstr "Байланыс"
+
+#: web/templates/web/contact.html:49 web/templates/web/index.html:374
+#, fuzzy
+#| msgid "Контакты"
+msgid "Наши Контакты"
+msgstr "Біздің байланыс"
+
+#: web/templates/web/contact.html:57 web/templates/web/index.html:382
+msgid "Канцелярия\\Приемная"
+msgstr "Кеңсе / Қабылдау"
+
+#: web/templates/web/contact.html:61 web/templates/web/index.html:386
+msgid "Колл-центр:"
+msgstr "Мүлікті сату бөлімі:"
+
+#: web/templates/web/contact.html:79 web/templates/web/index.html:404
+msgid "050010, пр. Достык 160,"
+msgstr "050010, Достық даңғылы 160,"
+
+#: web/templates/web/contact.html:80 web/templates/web/index.html:405
+msgid "г. Алматы, Республика Казахстан"
+msgstr "Алматы қ., Қазақстан Республикасы"
+
+#: web/templates/web/contact.html:88 web/templates/web/index.html:422
+msgid "Оставьте ваше сообщение"
+msgstr "Кері Байланыс"
+
+#: web/templates/web/contact.html:91 web/templates/web/index.html:425
+msgid "ФИО"
+msgstr "Аты-жөні"
+
+#: web/templates/web/contact.html:92 web/templates/web/index.html:426
+msgid "Телефон"
+msgstr "Телефон нөмірі"
+
+#: web/templates/web/contact.html:93 web/templates/web/index.html:427
+msgid "Email"
+msgstr ""
+
+#: web/templates/web/contact.html:94 web/templates/web/index.html:428
+#, fuzzy
+#| msgid "Правление"
+msgid "Обращение"
+msgstr "Хабарламаның мазмұны"
+
+#: web/templates/web/godovoi-otchet.html:7
+#: web/templates/web/godovoi-otchet.html:29
+msgid "Годовой отчет"
+msgstr "Жылдық есеп"
+
+#: web/templates/web/includes/footer.html:36
+#: web/templates/web/includes/footer.html:51
+msgid "Старая версия сайта"
+msgstr "Сайттың ескі нұсқасы"
+
+#: web/templates/web/includes/footer.html:42
+#: web/templates/web/includes/header.html:81
+#: web/templates/web/includes/header.html:151
+msgid "Главная"
+msgstr "Басты бет"
+
+#: web/templates/web/includes/footer.html:43
+#: web/templates/web/includes/header.html:131
+#: web/templates/web/includes/header.html:201
+#: web/templates/web/search-page.html:106 web/templates/web/zakup-itogi.html:7
+#: web/templates/web/zakup-itogi.html:31
+msgid "Закупки"
+msgstr "Сатып алу"
+
+#: web/templates/web/includes/footer.html:44
+#: web/templates/web/includes/header.html:132
+#: web/templates/web/includes/header.html:202 web/templates/web/index.html:295
+#: web/templates/web/news-page.html:7 web/templates/web/news-page.html:30
+#: web/templates/web/search-page.html:84
+msgid "Новости"
+msgstr "Жаңалықтар"
+
+#: web/templates/web/includes/footer.html:62
+msgid "О фонде"
+msgstr "Қор туралы"
+
+#: web/templates/web/includes/footer.html:64
+msgid "Информация о Фонде"
+msgstr "Қор туралы ақпарат"
+
+#: web/templates/web/includes/footer.html:65
+#: web/templates/web/includes/header.html:87
+#: web/templates/web/includes/header.html:157
+#: web/templates/web/main-info.html:7 web/templates/web/main-info.html:35
+msgid "Основная деятельность"
+msgstr "Негізгі қызмет"
+
+#: web/templates/web/includes/footer.html:66
+msgid "Руководство"
+msgstr "Басшылық"
+
+#: web/templates/web/includes/footer.html:67
+#: web/templates/web/includes/header.html:90
+#: web/templates/web/includes/header.html:160
+#: web/templates/web/org-struktura.html:7
+#: web/templates/web/org-struktura.html:30
+msgid "Организационная структура"
+msgstr "Ұйымдастыру құрылымы"
+
+#: web/templates/web/includes/footer.html:68
+msgid "Финансовая отчетность"
+msgstr "Қаржылық есептілік"
+
+#: web/templates/web/includes/footer.html:69
+#: web/templates/web/struktura.html:66
+msgid "Дочерние организации"
+msgstr "Еншілес ұйымдар"
+
+#: web/templates/web/includes/footer.html:79
+#: web/templates/web/includes/header.html:116
+#: web/templates/web/includes/header.html:186
+msgid "Реализация активов"
+msgstr "Активтерді сату"
+
+#: web/templates/web/includes/footer.html:81
+#: web/templates/web/includes/header.html:118
+#: web/templates/web/includes/header.html:188
+msgid "Каталог имущества"
+msgstr "Мүлік каталогы"
+
+#: web/templates/web/includes/footer.html:83
+#: web/templates/web/includes/header.html:120
+#: web/templates/web/includes/header.html:190
+msgid ""
+"Инфографика по регистрации и участию на портале государственного реестра"
+msgstr "Мемлекеттік тізілім порталында тіркеу және қатысу бойынша инфографика"
+
+#: web/templates/web/includes/footer.html:86
+#: web/templates/web/includes/header.html:123
+#: web/templates/web/includes/header.html:193
+msgid "Инфографика по оформлению сделки"
+msgstr "Келісімшартты рәсімдеу бойынша инфографика"
+
+#: web/templates/web/includes/footer.html:89
+msgid "Перечень имущества дочерних организаций к реализаций"
+msgstr "Активтердің құрылымы және еншілес ұйымдар"
+
+#: web/templates/web/includes/head.html:5
+#: web/templates/web/includes/header-new.html:5 web/templates/web/index.html:8
+#: web_backup/templates/web/includes/head.html:5
+#: web_backup/templates/web/includes/header-new.html:5
+msgid "ФОНД ПРОБЛЕМНЫХ КРЕДИТОВ"
+msgstr "ПРОБЛЕМАЛЫҚ КРЕДИТТЕР ҚОРЫ"
+
+#: web/templates/web/includes/header.html:23
+#: web/templates/web/includes/header.html:217 web/templates/web/index.html:158
+msgid "Поиск"
+msgstr "Іздеу"
+
+#: web/templates/web/includes/header.html:46
+#: web/templates/web/includes/header.html:73
+#: web_backup/templates/web/includes/header.html:33
+msgid "Пн-Пт"
+msgstr "Дс-Жм"
+
+#: web/templates/web/includes/header.html:83
+#: web/templates/web/includes/header.html:153
+msgid "О Фонде"
+msgstr "Қор туралы"
+
+#: web/templates/web/includes/header.html:85
+#: web/templates/web/includes/header.html:155
+msgid "О нас"
+msgstr "Біз туралы"
+
+#: web/templates/web/includes/header.html:88
+#: web/templates/web/includes/header.html:158 web/templates/web/ofond.html:8
+#: web/templates/web/ofond.html:31
+msgid "Миссия. Видение"
+msgstr "Миссиясы. Пайымдауы"
+
+#: web/templates/web/includes/header.html:89
+#: web/templates/web/includes/header.html:159
+msgid "Стратегические направления"
+msgstr "Стратегиялық бағыттар"
+
+#: web/templates/web/includes/header.html:92
+#: web/templates/web/includes/header.html:162
+msgid "Руководство Фонда"
+msgstr "Қор басшылығы"
+
+#: web/templates/web/includes/header.html:94
+#: web/templates/web/includes/header.html:164
+msgid "Совет директоров"
+msgstr "Директорлар кеңесі"
+
+#: web/templates/web/includes/header.html:95
+#: web/templates/web/includes/header.html:165
+msgid "Комитеты Совета директоров"
+msgstr "Директорлар кеңесінің комитеттері"
+
+#: web/templates/web/includes/header.html:96
+#: web/templates/web/includes/header.html:166
+msgid "Правление"
+msgstr "Басқарма"
+
+#: web/templates/web/includes/header.html:98
+#: web/templates/web/includes/header.html:168
+msgid "Корпоративное управление"
+msgstr "Корпоративтік басқару"
+
+#: web/templates/web/includes/header.html:100
+#: web/templates/web/includes/header.html:170 web/templates/web/riski.html:7
+#: web/templates/web/riski.html:29
+msgid "Управление рисками"
+msgstr "Тәуекелдерді басқару"
+
+#: web/templates/web/includes/header.html:101
+#: web/templates/web/includes/header.html:171 web/templates/web/kodeks.html:7
+#: web/templates/web/kodeks.html:29
+msgid "Принципы корпоративного управления"
+msgstr "Корпоративтік басқару қағидаттары"
+
+#: web/templates/web/includes/header.html:102
+#: web/templates/web/includes/header.html:172 web/templates/web/principi.html:7
+#: web/templates/web/principi.html:29
+msgid "Этические принципы"
+msgstr "Этикалық қағидалар"
+
+#: web/templates/web/includes/header.html:107
+#: web/templates/web/includes/header.html:177
+msgid "Отчетность"
+msgstr "Есептілік"
+
+#: web/templates/web/includes/header.html:110
+#: web/templates/web/includes/header.html:180
+msgid "Годовые отчеты"
+msgstr "Жылдық есептер"
+
+#: web/templates/web/includes/header.html:112
+#: web/templates/web/includes/header.html:182
+#: web/templates/web/struktura.html:7 web/templates/web/struktura.html:39
+msgid "Структура активов и дочерние организации"
+msgstr "Активтердің құрылымы және еншілес ұйымдар"
+
+#: web/templates/web/index.html:54
+msgid "Шаг 1"
+msgstr "Қадам 1"
+
+#: web/templates/web/index.html:55
+msgid "Выбор объекта имущества"
+msgstr "Мүлік объектісін таңдау"
+
+#: web/templates/web/index.html:56 web/templates/web/index.html:67
+#: web/templates/web/index.html:78 web/templates/web/search-page.html:118
+#: web/templates/web/search-page.html:137 web/templates/web/zakup-itogi.html:50
+#: web/templates/web/zakup.html:90
+msgid "Подробнее"
+msgstr "Толығырақ"
+
+#: web/templates/web/index.html:65
+msgid "Шаг 2"
+msgstr "Қадам 2"
+
+#: web/templates/web/index.html:66
+msgid "Регистрация и участие на торгах"
+msgstr "Аукционға қатысу және тіркеу"
+
+#: web/templates/web/index.html:76
+msgid "Шаг 3"
+msgstr "Қадам 3"
+
+#: web/templates/web/index.html:77
+msgid "Оформление сделки"
+msgstr "Мәмілені жасасу"
+
+#: web/templates/web/index.html:170
+msgid "Миссия АО “Фонд проблемных кредитов”"
+msgstr "“Проблемалық кредиттер қоры” АҚ миссиясы"
+
+#: web/templates/web/index.html:173
+msgid ""
+"Содействие оздоровлению национальной экономики через (1) улучшение качества "
+"кредитных портфелей банков второго уровня путем выкупа неработающих активов, "
+"(2) вовлечение в экономический оборот неработающих активов посредством их "
+"оздоровления и реализации."
+msgstr ""
+"(1) жұмыс істемейтін активтерді сатып алу жолымен екінші деңгейлі банктердің "
+"несиелік портфельдерінің сапасын жақсарту, (2) жұмыс істемейтін активтерді "
+"экономикалық айналымға тарту арқылы оларды қалпына келтіру және сату арқылы "
+"ұлттық экономиканы қалпына келтіруге үлес қосу."
+
+#: web/templates/web/index.html:180
+msgid "Наши достижения"
+msgstr "Біздің жетістіктеріміз"
+
+#: web/templates/web/index.html:183
+#, fuzzy
+#| msgid ""
+#| "В результате деятельности Фонда по оздоровлению банковского сектора и "
+#| "вовлечению активов в экономический оборот путем реструктуризации "
+#| "проектов, взыскания задолженности и реализации объектов имущества было "
+#| "достигнуто"
+msgid ""
+"В результате деятельности Фонда по оздоровлению банковского сектора и "
+"вовлечению активов в экономический оборот путем реструктуризации проектов, "
+"взыскания задолженности и реализации объектов имущества было достигнуто"
+msgstr ""
+"Қордың банк секторын сауықтыруға және активтерді экономикалық айналымға "
+"жобаларды қайта құрылымдау, қарыздарды өндіріп алу және мүлік активтерін "
+"сату арқылы кіргізуге бағытталған қызметінің нәтижесінде"
+
+#: web/templates/web/index.html:189
+msgid "Сохранено и создано рабочих мест"
+msgstr "Жұмыс орындары сақталды және құрылды"
+
+#: web/templates/web/index.html:224
+#, fuzzy
+#| msgid "Вовлечено активов в экономический оборот на сумму"
+msgid "Вовлечено активов в <br> экономический оборот на сумму"
+msgstr ""
+"388\n"
+"млрд теңге"
+
+#: web/templates/web/index.html:246
+msgid "Оздоровлено проектов"
+msgstr ""
+"36 \n"
+"компанияның"
+
+#: web/templates/web/index.html:258
+msgid "36 <br> компаний"
+msgstr "Жобалары сауықтырылды"
+
+#: web/templates/web/index.html:268
+msgid "Обеспечено налоговых поступлений в бюджет"
+msgstr ""
+"25\n"
+"млрд теңгеден астам"
+
+#: web/templates/web/index.html:280
+#, fuzzy
+#| msgid "свыше <br>  <span class=\\"
+msgid "свыше <span class=\\"
+msgstr "Бюджетке салықтық түсімдер қамтамасыз етілді"
+
+#: web/templates/web/index.html:369 web/templates/web/index.html:418
+msgid ""
+"Если Вам известно о правонарушениях, совершаемых третьими лицами в отношении "
+"Фонда, либо работниками Фонда, Вы можете отправить соответствующее сообщение "
+"на электронный ящик: senim@fpl.kz для принятия мер."
+msgstr ""
+"Егер Сізге Қорға қатысты үшінші тұлғалармен, немесе Қор қызметкерлерімен "
+"жасалған құқық бұзушылықтар туралы мәлім болса, Сіз шара қолдану үшін тиісті "
+"хабарламаны senim@fpl.kz электронды жәшігіне жолдай аласыз."
+
+#: web/templates/web/kodeks.html:32 web/templates/web/kodeks.html:35
+msgid "Кодекс корпоративного управления"
+msgstr "Корпоративтік басқару кодексі"
+
+#: web/templates/web/main-info.html:41
+#, fuzzy
+#| msgid "Реализация активов"
+msgid "Приобретение активов"
+msgstr "Активтерді сату"
+
+#: web/templates/web/main-info.html:43
+msgid ""
+"Приобретение активов Фондом производится, при условии их соответствия "
+"критериям, установленным Требованиями к приобретаемым (приобретенным) Фондом "
+"активам и правам требования. <br> Приобретение активов Фондом может "
+"осуществляться только у банков и юридических лиц, ранее являвшихся банками."
+msgstr ""
+"Қор жұмыс істемейтін активтерді тікелей сатып алу, бір мезгілде сатумен "
+"тікелей сатып алу тетіктерін және банктерді шартты қаржыландыруды қоса "
+"алғанда, банктермен және бұрын банктер болып табылған заңды тұлғалармен "
+"ынтымақтастықтың басқа да бағыттарын пайдаланады."
+
+#: web/templates/web/main-info.html:46
+msgid "Управление приобретенными активами"
+msgstr "Сатып алынған активтерді басқару"
+
+#: web/templates/web/main-info.html:50
+msgid ""
+"Управление приобретенными активами, их содержание и (или) реализация, "
+"осуществляется Фондом одним из следующих способов:"
+msgstr ""
+"Сатып алынған активтерді басқаруды, оларды ұстауды және (немесе) сатуды Қор "
+"келесі тәсілдердің біреуімен жүзеге асырады:"
+
+#: web/templates/web/main-info.html:53
+msgid ""
+"<ul><li>Фондом самостоятельно;</li><li>Банками или юридическими лицами, "
+"ранее являвшимися банками, у которых Фондом были приобретены активы;</"
+"li><li>Дочерними и (или) ассоциированными организациями Фонда;</"
+"li><li>Доверительными управляющими;</li><li>Иными финансовыми организациями, "
+"профессиональными экспертами, международными аудиторами и аудиторскими "
+"организациями.</li></ul>"
+msgstr ""
+"<ul><li>Қормен дербес;</li><li>Қорға активтерді сатқан банктермен немесе "
+"бұрын банк болған заңды тұлғалармен;</li><li>Қордың еншілес және (немесе) "
+"қауымдастырылған ұйымдарымен;</li><li>сенімгер басқарушылармен.</li></ul>"
+
+#: web/templates/web/main-info.html:57
+#, fuzzy
+#| msgid ""
+#| "Управление приобретенными активами включает в себя следующие мероприятия:"
+msgid ""
+"Управление приобретенными активами и их реализации включает в себя следующие "
+"мероприятия:"
+msgstr "Сатып алынған активтерді басқару және оларды жою келесі қызмет түрлерін қамтиды:"
+
+#: web/templates/web/main-info.html:59
+#, fuzzy
+#| msgid ""
+#| "реструктуризация и оздоровление <br> имущественный наем (аренда/аренда с "
+#| "последующим выкупом); <br> передача в доверительное управление; <br> "
+#| "консервация; <br> реализация; <br> передача прав требования и активов в "
+#| "государственную собственность в порядке, определяемым законодательством "
+#| "Республики Казахстан о государственном имуществе; <br>  реализация "
+#| "инвестиционных проектов; <br> иные мероприятия, определяемые Фондом."
+msgid ""
+"<ul><li>Реструктуризация и оздоровление;</li><li>Имущественный наем (аренда/"
+"аренда с последующим выкупом);</li><li>Передача в доверительное управление;</"
+"li><li>Консервация;</li><li>Реализация;</li><li>Передача прав требования и "
+"активов в государственную собственность в порядке, определяемым "
+"законодательством Республики Казахстан о государственном имуществе; </"
+"li><li>Реализация инвестиционных проектов;</li><li>Иные мероприятия, "
+"определяемые Фондом.</li></ul>"
+msgstr ""
+"<ul><li>Қайта ұрылымдау және сауықтандыру;</li><li>Мүліктік жалдау (жалға "
+"алу/кейін сатып алумен жалға алу);</li><li>Сенімгерлік басқаруға беру;</"
+"li><li>Консервация;</li> <li>Сату;</li><li>Талап ету құқықтарын және "
+"активтерді Қазақстан;</li><li>Республикасының мемлекеттік мүлік туралы "
+"заңнамасымен белгіленетін тәртіпте мемлекеттік меншікке беру;</"
+"li><li>Инвестициялық жобаларды іске асыру;</li>\n"
+"<li>Қор белгілейтін өзге іс-шаралар.</li></ul>"
+
+#: web/templates/web/main-info.html:63
+msgid ""
+"Порядок и условия проведения указанных мероприятий определяются внутренними "
+"документами Фонда."
+msgstr ""
+"Көрсетілген іс-шараларды өткізу тәртібі және шарттары Қордың ішкі "
+"құжаттарымен белгіленеді. \n"
+"."
+
+#: web/templates/web/main-info.html:68
+#, fuzzy
+#| msgid ""
+#| "Реализация имущества, находящегося в залоге по правам требований, "
+#| "выкупленным Фондом у банков или юридических лиц, ранее являвшимися "
+#| "банками, осуществляется: <br> в рамках исполнительного производства в "
+#| "соответствии с Законом Республики Казахстан от 2 апреля 2010 года 'Об "
+#| "исполнительном производстве и статусе судебных исполнителей'; <br> в "
+#| "рамках процедур реабилитации и банкротства в соответствии с Законом "
+#| "Республики Казахстан от 7 марта 2014 года «О реабилитации и банкротстве» "
+#| "<br> в иных случаях – в соответствии с внутренними документами Фонда и "
+#| "действующим законодательством Республики Казахстан."
+msgid ""
+"Реализация имущества, находящегося в залоге по правам требований, "
+"выкупленным Фондом у банков или юридических лиц, ранее являвшимися банками, "
+"осуществляется: <ul><li>В рамках исполнительного производства в соответствии "
+"с Законом Республики Казахстан от 2 апреля 2010 года «Об исполнительном "
+"производстве и статусе судебных исполнителей»;</li><li>В рамках процедур "
+"реабилитации и банкротства в соответствии с Законом Республики Казахстан от "
+"7 марта 2014 года «О реабилитации и банкротстве»;</li><li>В иных случаях – в "
+"соответствии с внутренними документами Фонда и действующим законодательством "
+"Республики Казахстан.</li></ul>"
+msgstr ""
+"Қор банктерден немесе бұрын банк болған заңды тұлғалардан сатып алған талап "
+"ету құқықтары бойынша кепілдегі мүлікті сату: <ul><li>Қазақстан "
+"Республикасының 2010 жылғы 2 сәуірдегі «Атқарушылық iс жүргiзу және сот "
+"орындаушыларының мәртебесi туралы» Заңына сәйкес атқарушылық іс жүргізу "
+"шеңберінде;</li><li>Қазақстан Республикасының 2014 жылғы 7 наурыздағы "
+"«Оңалту және банкроттық туралы» Заңына сәйкес оңалту және банкроттық "
+"рәсімдері шеңберінде;</li><li>Өзгежағдайларда – Қордың ішкі құжаттарына және "
+"Қазақстан Республикасының қолданыстағы заңнамаларына сәйкес жүзеге асырылады."
+"</li></ul>"
+
+#: web/templates/web/ofond.html:35
+#, fuzzy
+#| msgid ""
+#| "АО «Фонд проблемных кредитов» был создан в 2012 года для оказания "
+#| "содействия банкам в процессе «очистки» баланса от «неработающих» займов в "
+#| "целях выполнения стратегической задачи по улучшению качества ссудного "
+#| "портфеля в банковской системе. С 2012 года по 2017 год управление Фондом "
+#| "осуществлял Национальный банк Республики Казахстан. В 2017 году Фонд был "
+#| "передан в управление Министерству финансов Республики Казахстан. "
+#| "Единственным акционером Фонда является Правительство Республики Казахстан."
+msgid ""
+"АО «Фонд проблемных кредитов» был создан в 2012 году для оказания содействия "
+"банкам в процессе «очистки» баланса от «неработающих» займов в целях "
+"выполнения стратегической задачи по улучшению качества ссудного портфеля в "
+"банковской системе. С 2012 года по 2017 год управление Фондом осуществлял "
+"Национальный банк Республики Казахстан. В 2017 году Фонд был передан в "
+"управление Министерству финансов Республики Казахстан. Единственным "
+"акционером Фонда является Правительство Республики Казахстан."
+msgstr ""
+"«Проблемалық кредиттер қоры» АҚ банк жүйесінде қарыз портфелінің сапасын "
+"жақсарту бойынша стратегиялық міндетті орындау мақсатында балансты «жұмыс "
+"істемейтін» қарыздардан «тазарту» үрдісінде банктерге жәрдемдесу үшін 2012 "
+"жылы құрылды. 2012 жылдан 2017 жылға дейін Қорды басқаруды Қазақстан "
+"Республикасының Ұлттық банкі жүзеге асырды. 2017 жылы Қор Қазақстан "
+"Республикасының Қаржы министрлігіне басқаруға табысталды. Қордың жалғыз "
+"акционері Қазақстан Республикасының Үкіметі болып табылады."
+
+#: web/templates/web/ofond.html:38
+#, fuzzy
+#| msgid "Миссия. Видение"
+msgid "Миссия Фонда"
+msgstr "Миссиясы. Пайымдауы"
+
+#: web/templates/web/ofond.html:38
+msgid "Содействие оздоровлению национальной экономики через:"
+msgstr "Ұлттық экономиканы қалпына келтіруге ықпал ету:"
+
+#: web/templates/web/ofond.html:40
+msgid ""
+"Улучшение качества кредитных портфелей банков второго уровня путем выкупа "
+"неработающих активов; Вовлечение в экономический оборот неработающих активов "
+"посредством их оздоровления и реализации."
+msgstr ""
+"Жұмыс істемейтін активтерді сатып алу арқылы екінші деңгейлі банктердің "
+"несиелік портфельдерінің сапасын арттыру;<br> Жұмыс істемейтін активтерді "
+"оларды қалпына келтіру және сату арқылы экономикалық айналымға тарту."
+
+#: web/templates/web/ofond.html:44
+#, fuzzy
+#| msgid "Стратегические направления"
+msgid "Стратегическое видение Фонда"
+msgstr "Стратегиялық бағыттар"
+
+#: web/templates/web/ofond.html:45
+msgid ""
+"Мы к 2027 году - профессиональная управляющая компания и национальный центр "
+"компетенций в области очистки ссудных портфелей финансовых организаций, "
+"реструктуризации активов и управления стрессовым портфелем. Фонд "
+"руководствуется Принципами, которые обеспечивают прозрачность процесса "
+"принятия решений и возвратность выделенных средств. Направлениями "
+"деятельности Фонда являются оздоровление банковского сектора и вовлечение в "
+"экономический оборот выкупленных неработающих займов. Стратегия Фонда в "
+"области управления активами направлена на оперативный и целевой возврат "
+"активов в экономический оборот при поддержании постоянного и планомерного "
+"денежного потока от реализации активов."
+msgstr ""
+"2027 жылға қарай біз кәсіби менеджменттік компаниямыз және қаржы "
+"институттарының несиелік портфельдерін тазарту, активтерді қайта құрылымдау "
+"және стресс портфелін басқару бойынша ұлттық шеберлік орталығы болып "
+"табыламыз. Қор шешімдер қабылдау процесінің ашықтығын және бөлінген "
+"қаражатты қайтаруды қамтамасыз ететін Қағидаларды басшылыққа алады. Қордың "
+"қызметі банк секторын сауықтыру және өтелген жұмыс істемейтін несиелерді "
+"экономикалық айналымға тарту болып табылады. Қордың активтерді басқару "
+"саласындағы стратегиясы активтерді сатудан түсетін тұрақты және жүйелі ақша "
+"ағымын сақтай отырып, активтерді экономикалық айналымға жедел және мақсатты "
+"түрде қайтаруға бағытталған."
+
+#: web/templates/web/ofond.html:46
+#, fuzzy
+#| msgid ""
+#| "Первым стратегическим направлением деятельности Фонда является "
+#| "оздоровление банковского сектора в обеспечении стабильного "
+#| "функционирования финансовой системы путем выработки и использования "
+#| "эффективных мер для очистки балансов банков второго уровня от "
+#| "«неработающих» займов. Вторым стратегическим направлением деятельности "
+#| "Фонда является вовлечение в экономический оборот выкупленных неработающих "
+#| "займов путем оздоровления выкупленных активов (реструктуризация, "
+#| "привлечение инвесторов, досудебная/судебная реализация, банкротство), "
+#| "реализация девелоперских проектов, а также реализации имущества Фонда и "
+#| "дочерних организаций:"
+msgid ""
+"Первым стратегическим направлением деятельности Фонда является оздоровление "
+"банковского сектора в обеспечении стабильного функционирования финансовой "
+"системы путем выработки и использования эффективных мер для очистки балансов "
+"банков второго уровня от «неработающих» займов. Вторым стратегическим "
+"направлением деятельности Фонда является вовлечение в экономический оборот "
+"выкупленных неработающих займов путем оздоровления выкупленных активов "
+"(реструктуризация, привлечение инвесторов, досудебная/судебная реализация, "
+"банкротство), реализация девелоперских проектов, а также реализации "
+"имущества Фонда и дочерних организаций."
+msgstr ""
+"Қор қызметінің бірінші стратегиялық бағыты - екінші деңгейлі банктердің "
+"баланстарын жұмыс істемейтін несиелерден тазарту бойынша тиімді шараларды "
+"әзірлеу және қолдану арқылы қаржы жүйесінің тұрақты жұмыс істеуін қамтамасыз "
+"етудегі банк секторын сауықтыру. Қор қызметінің екінші стратегиялық бағыты - "
+"сатып алынған активтерді қалпына келтіру (қайта құрылымдау, инвесторларды "
+"тарту, сотқа дейінгі / сотқа енгізу, банкроттық), даму жобаларын іске асыру, "
+"сондай-ақ Қор мен еншілес ұйымдардың мүлкін сату арқылы өтелген жұмыс "
+"істемейтін несиелерді экономикалық айналымға тарту:"
+
+#: web/templates/web/ofond.html:51
+msgid "Членство в международных организациях"
+msgstr "Халықаралық ұйымдарға мүшелік"
+
+#: web/templates/web/ofond.html:52
+msgid ""
+"Фонд проблемных кредитов является членом International Public Asset "
+"Management Company Forum (IPAF). IPAF это международная платформа по обмену "
+"успешных стратегий и знаний, а также сотрудничеству. IPAF был организован 7 "
+"(семью) азиатскими государственными компаниями по управлению активами: "
+msgstr ""
+"Проблемалық несие қоры Халықаралық қоғамдық активтерді басқару жөніндегі "
+"компанияның халықаралық форумының (IPAF) мүшесі болып табылады. IPAF - бұл "
+"табысты стратегиялар мен білімдермен алмасуға, сондай-ақ ынтымақтастыққа "
+"арналған халықаралық алаң. IPAF-ты 7 (жеті) азиялық мемлекеттік активтерді "
+"басқару компаниялары ұйымдастырды "
+
+#: web/templates/web/ofond.html:55
+msgid ""
+"Китайская компания по управлению активами (КУА) Cinda Co., Ltd. (КНР) "
+"<br>Китайская КУА Great Wall (КНР) <br>Китайская КУА Huarong Co., Ltd. (КНР) "
+"<br>Корейская корпорация по управлению активами (KAMCO) <br>Таиландская "
+"компания по управлению активами Sukhumvit Co., Ltd. <br>Вьетнамская компания "
+"по торговле долгами и активами (DATC) <br>Фонд проблемных кредитов "
+"(Казахстан) <br>IPAF начал работу в 2013 году и имеет 13 действующих членов "
+"включая Фонд. За период работы, IPAF провел 4 саммита и 6 обучающих "
+"семинаров."
+msgstr ""
+"Қытай активтерін басқару компаниясы (AMC) Cinda Co., Ltd. (ҚХР) <br> Қытай "
+"AMC Ұлы Қабырғасы (ҚХР) - Қытай AMC Huarong Co., Ltd. (ҚХР) - Korea Asset "
+"Management Corporation (KAMCO) - Таиланд активтерін басқару компаниясы "
+"Sukhumvit Co., Ltd. <br> Вьетнамдық қарыздар және активтер сауда компаниясы "
+"(DATC) - Проблемалық несие қоры (Қазақстан) - IPAF 2013 жылы жұмысын бастады "
+"және оның ішінде 13 белсенді мүшесі бар. Жұмыс барысында IPAF 4 саммит пен 6 "
+"оқыту семинарларын өткізді."
+
+#: web/templates/web/ofond.html:59
+msgid "Меморандум о взаимопонимании с KAMCO"
+msgstr "KAMCO-мен өзара түсіністік туралы меморандум"
+
+#: web/templates/web/ofond.html:60
+msgid ""
+"В 2018 году между Фондом и Корпорацией по управлению активами Кореи (KAMCO) "
+"был подписан Меморандум о взаимопонимании. KAMCO был создан в 1962 году в "
+"качестве подведомственной организации Банка Развития Кореи в целях "
+"управления его проблемными активами. В дальнейшем, KAMCO был реорганизован и "
+"был наделен компетенцией по выкупу и оздоровлению неработающих кредитов "
+"финансовых учреждений."
+msgstr ""
+"2018 жылы Қор мен Корея активтерін басқару корпорациясы (KAMCO) арасында "
+"өзара түсіністік туралы меморандумға қол қойылды. KAMCO 1962 жылы Корея Даму "
+"Банкінің стресті активтерін басқару үшін оған бағынышты ұйым ретінде "
+"құрылды. Кейіннен KAMCO қайта құрылды және қаржы институттарының жұмыс "
+"істемейтін несиелерін сатып алуға және сауықтыруға өкілетті болды."
+
+#: web/templates/web/oldfpl_ru.html:8
+#, fuzzy
+#| msgid "Старая версия сайта"
+msgid "Старый сайт"
+msgstr "Сайттың ескі нұсқасы"
+
+#: web/templates/web/oldzakup.html:8
+#, fuzzy
+#| msgid "Миссия АО “Фонд проблемных кредитов”"
+msgid "Закупки АО Фонд Проблемных Кредитов"
+msgstr "“Проблемалық кредиттер қоры” АҚ миссиясы"
+
+#: web/templates/web/principi.html:32 web/templates/web/principi.html:34
+msgid "Кодекс деловой этики"
+msgstr "Іскерлік этика кодексі"
+
+#: web/templates/web/purchase-page.html:60
+msgid "Форма заявки на участие в квалиф..."
+msgstr "Катысуға өтінім нысаны сапал..."
+
+#: web/templates/web/purchase-page.html:70
+msgid "Форма сведений о квалификации"
+msgstr "Біліктілік туралы ақпарат нысаны"
+
+#: web/templates/web/purchase-page.html:80
+msgid "Форма заявки на участие в..."
+msgstr "Катысуға өтінім нысаны."
+
+#: web/templates/web/riski.html:32 web/templates/web/riski.html:35
+msgid "Политика управления рисками"
+msgstr "Тәуекелдерді басқару саясаты"
+
+#: web/templates/web/rukovodstvo2.html:7 web/templates/web/rukovodstvo2.html:30
+#, fuzzy
+#| msgid "Совет директоров"
+msgid "Состав совета директоров"
+msgstr "Директорлар кеңесі"
+
+#: web/templates/web/rukovodstvo2.html:39
+msgid "Шолпанкулов Берик Шолпанкулович"
+msgstr "Шолпанқұлов Берік Шолпанқұлұлы"
+
+#: web/templates/web/rukovodstvo2.html:41
+msgid "Председатель Совета директоров"
+msgstr "Директорлар Кеңесінің төрағасы"
+
+#: web/templates/web/rukovodstvo2.html:47
+msgid ""
+"Родился в 1976 году. Дата избрания в Совет директоров - 3 мая 2017 года. С "
+"2014 по 2016 год - Заместитель Министра обороны Республики Казахстан. С "
+"декабря 2016 по март 2019 года - Вице-министр финансов Республики Казахстан. "
+"Является Первым Вице-министром финансов Республики Казахстан с марта 2019 "
+"года, членом Совета директоров АО “Национальный управляющий холдинг "
+"“КазАгро” с марта 2019 года. С мая 2017 года - Председатель Совета "
+"директоров Фонда."
+msgstr ""
+"1976 жылы туған. Директорлар кеңесіне сайлау күні - 2017 жылғы 3 мамыр. "
+"2014-2016 жылдары - Қазақстан Республикасы Қорғаныс Министрінің орынбасары. "
+"2016 жылғы желтоқсаннан 2019 жылғы наурызға дейін – Қазақстан "
+"Республикасының Қаржы Вице-министрі. 2019 жылғы наурыздан бастап Қазақстан "
+"Республикасының Бірінші Қаржы Вице-министрі, 2019 жылғы наурыздан бастап "
+"\"ҚазАгро \"Ұлттық басқарушы холдингі\" АҚ Директорлар кеңесінің мүшесі "
+"болып табылады. 2017 жылдың мамыр айынан бастап – Қордың Директорлар "
+"кеңесінің төрағасы."
+
+#: web/templates/web/rukovodstvo2.html:57
+msgid "Ташенев Бакытбек Хакимович"
+msgstr "Ташенев Бақытбек Хәкімұлы"
+
+#: web/templates/web/rukovodstvo2.html:59
+#: web/templates/web/rukovodstvo2.html:77
+msgid "Член Совета директоров"
+msgstr "Директорлар Кеңесінің мүшесі"
+
+#: web/templates/web/rukovodstvo2.html:65
+msgid ""
+"Родился в 1977 году. Дата избрания в Совет директоров - 3 мая 2020 года. "
+"Является Председателем Комитета государственного имущества и приватизации "
+"Министерства финансов Республики Казахстан. С мая 2020 года - Член Совета "
+"Директоров Фонда."
+msgstr ""
+"1977 жылы туған. Директорлар кеңесіне сайлау күні - 2020 жылғы 3 мамыр. "
+"Қазақстан Республикасы Қаржы министрлігінің Мемлекеттік мүлік және "
+"жекешелендіру комитетінің төрағасы болып табылады. 2020 жылдың мамыр айынан "
+"бастап – Қордың Директорлар кеңесінің мүшесі."
+
+#: web/templates/web/rukovodstvo2.html:75
+#: web/templates/web/sostav-pravlenia.html:39
+msgid "Елшiбаев Ержан Иманкyлyлы"
+msgstr "Елшiбаев Ержан Иманқұлұлы"
+
+#: web/templates/web/rukovodstvo2.html:83
+msgid ""
+"Родился в 1980 году. Дата избрания в Совет директоров – 12 апреля 2019 года. "
+"С 2014 по 2018 год – Управляющий директор АО Страховой брокер «Малакут»; С "
+"ноября 2018 по апрель 2019 года – Заместитель Председателя Правления Фонда. "
+"Является Председателем Правления Фонда с апреля 2019 года. Полномочия "
+"Председателя Правления продлены Решением Единственного акционера № 422 от "
+"27.04.2020 года до 2 мая 2023 года."
+msgstr ""
+"1980 жылы туған. Директорлар кеңесіне сайлау күні - 2019 жылғы 12 сәуір. "
+"2014-2018 жылдары – \"Малакут\" сақтандыру брокері АҚ Басқарушы директоры; "
+"2018 жылдың қарашасынан 2019 жылдың сәуіріне дейін – Қордың Басқарма "
+"төрағасының орынбасары. 2019 жылғы сәуірден бастап Қор Басқармасының "
+"Төрағасы болып табылады. Басқарма төрағасының өкілеттігі Жалғыз акционердің "
+"27.04.2020 жылғы № 422 шешімімен 2023 жылғы 2 мамырға дейін ұзартылды."
+
+#: web/templates/web/rukovodstvo2.html:97
+#: web/templates/web/rukovodstvo2.html:115
+msgid "Независимый директор"
+msgstr "Директорлар Кеңесінің мүшесі - Тәуелсіз директор"
+
+#: web/templates/web/rukovodstvo2.html:103
+msgid ""
+"Родился в 1972 году. Дата избрания в Совет директоров – 28 ноября 2018 года. "
+"С 10.06.2013 года по настоящее время – Председатель Совета директоров АО "
+"«Отан». С ноября 2018 года – Член Совета директоров Фонда в качестве "
+"Независимого директора."
+msgstr ""
+"1972 жылы туған. Директорлар Кеңесіне сайланған күні – 2018 жылдың 28 "
+"қарашасы. 10.06.2013 жылдан бастап қазіргі уақытқа дейін – \"Отан\" АҚ "
+"Директорлар кеңесінің төрағасы. 2018 жылғы қарашадан бастап-Тәуелсіз "
+"директор ретінде Қордың Директорлар кеңесінің мүшесі."
+
+#: web/templates/web/rukovodstvo2.html:121
+msgid ""
+"Родился в 1954 году. Дата избрания в Совет директоров – 4 сентября 2018 "
+"года. С 2013 по 2018 год – Заведующий социально-экономическим отделом "
+"Канцелярии Премьер-Министра Республики Казахстан. Является Внештатным "
+"Советником Премьер-Министра Республики Казахстан с августа 2018 года. С "
+"сентября 2018 года - Член Совета Директоров Фонда в качестве Независимого "
+"директора."
+msgstr ""
+"1954 жылы туған. Директорлар кеңесіне сайлау күні - 2018 жылғы 4 қыркүйек. "
+"2013-2018 жылдары – Қазақстан Республикасы Премьер-Министрі Кеңсесінің "
+"Әлеуметтік-экономикалық бөлімінің меңгерушісі. 2018 жылғы тамыздан бастап "
+"Қазақстан Республикасы Премьер-Министрінің штаттан тыс кеңесшісі болып "
+"табылады. 2018 жылдың қыркүйегінен бастап – Қордың Директорлар кеңесінің "
+"мүшесі."
+
+#: web/templates/web/search-page.html:7
+msgid "Результаты поиска"
+msgstr "Іздеу нәтижелері"
+
+#: web/templates/web/search-page.html:32
+msgid "Активы"
+msgstr "Активтер"
+
+#: web/templates/web/search-page.html:125
+msgid "Итоги"
+msgstr "Нәтиже"
+
+#: web/templates/web/search-page.html:145
+msgid "Документы"
+msgstr "Құжаттар"
+
+#: web/templates/web/search-page.html:156
+msgid "Страницы"
+msgstr "Беттер"
+
+#: web/templates/web/search-page.html:166
+msgid "Поиск не дал результатов!"
+msgstr "Іздеу нәтиже берген жоқ!"
+
+#: web/templates/web/sostav-pravlenia.html:7
+#: web/templates/web/sostav-pravlenia.html:30
+msgid "Состав правления"
+msgstr "«Проблемалық кредиттер қоры» АҚ Басқармасының құрамы"
+
+#: web/templates/web/sostav-pravlenia.html:41
+msgid "Председатель Правления"
+msgstr "Басқарма Төрағасы"
+
+#: web/templates/web/sostav-pravlenia.html:47
+msgid ""
+"Родился в 1980 году. Дата назначения – 12 апреля 2019 года. С ноября 2018 по "
+"апрель 2019 года – Заместитель Председателя Правления Фонда. С апреля 2019 "
+"года – Председатель Правления Фонда, Член Совета директоров Фонда. "
+"Возглавляет Правление Фонда. Осуществляет общий контроль, координацию и "
+"руководство деятельностью всех структурных подразделений и работников Фонда, "
+"непосредственно контролирует, координирует и руководит деятельностью Членов "
+"Правления, Департамента риск-менеджмента, Юридического департамента, "
+"Департамента координации деятельностью, Советника Председателя Правления, а "
+"также осуществляет взаимодействие со Службой внутреннего аудита и "
+"Корпоративным Секретарем."
+msgstr ""
+"1980 жылы туған. Директорлар кеңесіне сайлау күні - 2019 жылғы 12 сәуір. "
+"2014-2018 жылдары – \"Малакут\" сақтандыру брокері АҚ Басқарушы директоры; "
+"2018 жылдың қарашасынан 2019 жылдың сәуіріне дейін – Қордың Басқарма "
+"төрағасының орынбасары. 2019 жылғы сәуірден бастап Қор Басқармасының "
+"Төрағасы болып табылады. Басқарма төрағасының өкілеттігі Жалғыз акционердің "
+"27.04.2020 жылғы № 422 шешімімен 2023 жылғы 2 мамырға дейін ұзартылды."
+
+#: web/templates/web/sostav-pravlenia.html:59
+#: web/templates/web/sostav-pravlenia.html:76
+#: web/templates/web/sostav-pravlenia.html:96
+#: web/templates/web/sostav-pravlenia.html:113
+msgid "Заместитель Председателя Правления"
+msgstr "Басқарма Төрағасының орынбасары"
+
+#: web/templates/web/sostav-pravlenia.html:64
+msgid ""
+"Родилась в 1971 году. Дата избрания в состав Правления – 5 октября 2017 "
+"года. С 2015 по 2017 год – Заместитель Председателя Правления АО "
+"«Казтехнологии». С октября 2017 года по настоящее время – Заместитель "
+"Председателя Правления Фонда. Курирует работу по реструктуризации прав "
+"требования. Координирует деятельность Департамента по работе с правами "
+"требования, Департамента новых проектов."
+msgstr ""
+"1971 жылы туған. Басқарма құрамына сайланған күні - 2017 жылғы 5 қазан. "
+"2015-2017 жылдары – \"Қазтехнология\" АҚ Басқарма төрағасының орынбасары. "
+"2017 жылғы қазаннан бастап қазіргі уақытқа дейін – Қордың Басқарма "
+"төрағасының орынбасары. Талап ету құқықтарын қайта құрылымдау бойынша "
+"жұмысқа жетекшілік етеді. Талап ету құқықтарымен жұмыс жөніндегі "
+"департаменінің, Жаңа жобалар департаментінің қызметін үйлестіреді."
+
+#: web/templates/web/sostav-pravlenia.html:74
+msgid "Увалиев Айдар Маймуратович"
+msgstr "Увалиев Айдар Маймұратұлы"
+
+#: web/templates/web/sostav-pravlenia.html:82
+msgid ""
+"Родился в 1975 году. Дата избрания в состав Правления – 6 мая 2019 года. С "
+"2015 по 2016 год – Директор филиала по Карагандинской области ТОО "
+"«ҚазМұнайГаз Өнімдері». В период с мая 2017 по декабрь 2018 года - Директор "
+"Департамента управлению имуществом Фонда. С декабря 2018 по май 2019 года - "
+"Директор Департамента взыскания задолженности Фонда. С мая 2019 года по "
+"настоящее время – Заместитель Председателя Правления Фонда. Курирует работу "
+"по реализации, управлению имуществом и взысканию задолженности. Координирует "
+"деятельность Департамента по управлению имуществом, Департамента взыскания "
+"задолженности и Департамента реализации активов."
+msgstr ""
+"1975 жылы туған. Басқарма құрамына сайланған күні – 2019 жылғы 6 мамыр. "
+"2015-2016 жылдары – \"ҚазМұнайГаз Өнімдері\" ЖШС Қарағанды облысы бойынша "
+"филиалының директоры. 2017 жылдың мамыр айынан бастап 2018 жылдың "
+"желтоқсанына дейін - Қордың Мүлік басқару департаментінің директоры. 2018 "
+"жылдың желтоқсанынан 2019 жылдың мамырына дейін – Қордың Берешекті өндіріп "
+"алу департаментінің директоры. 2019 жылдың мамыр айынан қазіргі уақытқа "
+"дейін – Қордың Басқарма төрағасының орынбасары. Мүлікті сату, басқару және "
+"берешекті өндіріп алу бойынша жұмыстарға жетекшілік етеді. Мүлік басқару "
+"департаментінің, Берешекті өндіріп алу департаментінің және Активтерді сату "
+"департаментінің қызметін үйлестіреді."
+
+#: web/templates/web/sostav-pravlenia.html:94
+msgid "Сабденов Даурен Аскарович"
+msgstr "Сәбденов Дәурен Асқарұлы"
+
+#: web/templates/web/sostav-pravlenia.html:101
+msgid ""
+"Родился в 1987 году. Дата избрания в состав Правления – 23 октября 2019 "
+"года. С 2015 по 2019 год – Заместитель Председателя Правления АО "
+"«Национальное агентство по технологическому развитию». С октября 2019 года "
+"по настоящее время – Заместитель Председателя Правления Фонда. Курирует "
+"работу по стратегии и корпоративному развитию. Координирует деятельность "
+"Департамента корпоративного развития и Департамента внутреннего "
+"администрирования."
+msgstr ""
+"1987 жылы туған. Басқарма құрамына сайланған күні – 2019 жылғы 23 қазан. "
+"2015-2019 жылдары – \"Технологиялық даму жөніндегі ұлттық агенттік\" АҚ "
+"Басқарма төрағасының орынбасары. 2019 жылғы қазаннан бастап қазіргі уақытқа "
+"дейін – Қордың Басқарма төрағасының орынбасары. Стратегия және корпоративтік "
+"даму бойынша жұмысқа жетекшілік етеді. Корпоративтік даму департаменті мен "
+"Ішкі әкімшілендіру департаментінің қызметін үйлестіреді."
+
+#: web/templates/web/sostav-pravlenia.html:111
+msgid "Дюсенов Дархан Абдукаримович"
+msgstr "Дүйсенов Дархан Әбдікәрімұлы"
+
+#: web/templates/web/sostav-pravlenia.html:119
+msgid ""
+"Родился в 1970 году. Дата избрания в состав Правления – 6 мая 2019 года. С "
+"марта 2005 по декабрь 2016 года – Директор Департамента андеррайтинга АО СК "
+"«КазЭкспортГарант». С ноября 2018 по декабрь 2018 года – Директор "
+"Департамента взыскания задолженности Фонда. С декабря 2018 по май 2019 года "
+"– Директор Департамента по управлению имуществом Фонда. С мая 2019 года по "
+"настоящее время – Заместитель Председателя Правления Фонда. Курирует работу "
+"по финансам и бюджетному планированию. Координирует деятельность "
+"Департамента финансового, налогового учета и отчетности, Департамента "
+"бюджетного планирования и Департамента учета выкупленных активов и "
+"кредитного администрирования."
+msgstr ""
+"1970 жылы туған. Басқарма құрамына сайланған күні – 2019 жылғы 6 мамыр. 2005 "
+"жылдың наурызынан 2016 жылдың желтоқсанына дейін - \"ҚазЭкспортГарант\" СК "
+"АҚ андеррайтинг департаментінің директоры. 2018 жылдың қарашасынан 2018 "
+"жылдың желтоқсанына дейін – Қордың Берешекті өндіріп алу департаментінің "
+"директоры. 2018 жылдың желтоқсанынан 2019 жылдың мамырына дейін – Қордың "
+"Мүлік басқару департаментінің директоры. 2019 жылдың мамыр айынан қазіргі "
+"уақытқа дейін – Қордың Басқарма төрағасының орынбасары. Қаржы және бюджеттік "
+"жоспарлау жұмыстарына жетекшілік етеді. Қаржылық, салықтық есепке алу және "
+"есептілік департаментінің, Бюджеттік жоспарлау департаментінің және Сатып "
+"алынған активтерді есепке алу және кредиттік әкімшілендіру департаментінің "
+"қызметін үйлестіреді."
+
+#: web/templates/web/step2.html:7
+#, fuzzy
+#| msgid ""
+#| "Инфографика по регистрации и участию на портале государственного реестра"
+msgid ""
+"Шаг 2: Инфографика по регистрации и участию на портале государственного "
+"реестра."
+msgstr "Мемлекеттік тізілім порталында тіркеу және қатысу бойынша инфографика"
+
+#: web/templates/web/step3.html:7 web/templates/web/step3.html:30
+msgid "Шаг 3 - Оформление сделки"
+msgstr "3-қадам Мәмілені ресімдеу"
+
+#: web/templates/web/strateg-napr.html:7 web/templates/web/strateg-napr.html:30
+msgid "СТРАТЕГИЧЕСКИЕ НАПРАВЛЕНИЯ ДЕЯТЕЛЬНОСТИ"
+msgstr "ҚОРДЫҢ СТРАТЕГИЯЛЫҚ БАҒЫТТАРЫ"
+
+#: web/templates/web/struktura.html:43
+msgid "Структура активов, тыс.тенге"
+msgstr "Активтердің құрылымы, мың теңге"
+
+#: web/templates/web/struktura.html:55
+msgid "Доля прав требования и инвестиционной собственности в структуре активов"
+msgstr ""
+"Активтер құрылымындағы талаптар мен инвестициялық жылжымайтын мүлік үлесі"
+
+#: web/templates/web/struktura.html:77
+msgid "АО «Estate Management Company» (EMC)"
+msgstr "«Estate Management Company» АҚ (EMC)"
+
+#: web/templates/web/struktura.html:79
+msgid ""
+"Одна из ведущих компаний Республики Казахстан в сфере аренды и управления "
+"коммерческой недвижимостью. В портфеле EMC 14 объектов в городах Алматы и "
+"Нур-Султан общей площадью 144 тыс. кв.м. – современные офисы класса A, B, С, "
+"коммерческие площади и Esentai Apartments. EMC доверяют международные "
+"компании, входящие в топ-500 по версии Fortune. В числе основных арендаторов "
+"– Procter&Gamble, British American Tobacco, Kimberly-Clark, JP Mondelez и "
+"другие. EMC работает по принципу REIT (Real Estate Investment Trust). В "
+"декабре 2016 года компания получила статус Акционерного общества и прошла "
+"листинг на казахстанской фондовой бирже (KASE). Подробная информация о "
+"деятельности АО «Estate Management Company» находится на сайте"
+msgstr ""
+"Қазақстан Республикасының жалға беру және коммерциялық жылжымайтын мүлікті "
+"басқару саласындағы жетекші компанияларының бірі. Алматы, Астана және Атырау "
+"қалаларындағы EMC портфелінде жалпы ауданы 143 мың шаршы метрден асатын 18 "
+"нысан – A, B, С класындағы қазіргі заманғы кеңселер, коммерциялық алаңдар "
+"және EsentaiApartments. EMC-ге Fortune нұсқасы бойынша топ-500 құрамына "
+"кіретін халықаралық компаниялар сенеді. Негізгі жал5а алушылар қатарында -"
+"Procter& Gamble, British American Tobacco, Kimberly-Clark, JP Mondelez және "
+"басқалар. EMC REIT (Real Estate Investment Trust) принципі бойынша жұмыс "
+"істейді. 2016 жылдың желтоқсанында компания акционерлік қоғам мәртебесін "
+"алды және Қазақстан қор биржасында (KASE) листингтен өтті. EMC туралы "
+"қосымша ақпаратты мына сілтеме арқылы таба аласыз http://emc-company.kz"
+
+#: web/templates/web/struktura.html:88
+msgid "ТОО «KAZKOM Realty»"
+msgstr "«KAZKOM Realty» ЖШС"
+
+#: web/templates/web/struktura.html:90
+msgid ""
+"ТОО «KAZKOM Realty» является компанией, специализирующейся на управлении, "
+"развитии и реализации земельных участков. В собственности Компании находятся "
+"земельные участки общей площадью свыше 900 га, расположенные в основном в г. "
+"Алматы и Алматинской области. Реализация земельных участков осуществляется "
+"на конкурсной основе на веб-портале реестра государственного имущества. По "
+"интересующим вопросам можете обращаться по телефону: + 7 (727) 356-09-71 "
+"(вн.2085)."
+msgstr ""
+"\"KAZKOM Realty\" ЖШС жер учаскелерін басқаруға, дамытуға және сатуға "
+"мамандандырылған компания болып табылады. Компанияның меншігінде жалпы "
+"ауданы 900 гектардан асатын, негізінен Алматы қаласы мен Алматы облысында "
+"орналасқан жер учаскелері бар. Жер учаскелерін сату мемлекеттік мүлік "
+"тізілімінің веб-порталында конкурстық негізде жүзеге асырылады. Сұрақ-жауап: "
+"+ 7 (727) 356-09-71 (ішкі.2085)."
+
+#: web/templates/web/zakup-itogi.html:35 web/templates/web/zakup.html:74
+msgid "Объявления о закупках"
+msgstr "Сатып алу туралы хабарландыру"
+
+#: web/templates/web/zakup-itogi.html:36 web/templates/web/zakup.html:75
+msgid "Объявления об итогах"
+msgstr "Нәтижелер туралы хабарламалар"
+
+#: web/templates/web/zakup-main.html:7
+#, fuzzy
+#| msgid "Закупки"
+msgid "Закупки АО ФПК"
+msgstr "Сатып алу"
+
+#: web/templates/web/zakup-main.html:31
+msgid "1. Государственные закупки"
+msgstr "1. Мемлекеттік сатып алу"
+
+#: web/templates/web/zakup-main.html:33
+msgid ""
+"Согласно постановления Правительства Республики Казахстан от 4 апреля 2017 "
+"года №167 государственный пакет акций Акционерного общества «Фонд проблемных "
+"кредитов» передан во владение и пользование Министерству финансов Республики "
+"Казахстан. В связи с чем АО «Фонд проблемных кредитов» осуществляет "
+"приобретение товаров, работ и услуг в соответствии с Законом Республики "
+"Казахстан  «О государственных закупках» от 4 декабря 2015 года № 434-V, "
+"Правилами осуществления государственных закупок, утвержденных приказом "
+"Министра финансов Республики Казахстан от 11 декабря 2015 года № 648."
+"<br><br>Утвержденный годовой план государственных закупок, годовой план "
+"государственных закупок с внесенными изменениями и(или) дополнениями, а "
+"также информация об объявлениях касательно приобретения товаров, работ, "
+"услуг доступны для просмотра на веб-портале государственных закупок:"
+msgstr ""
+"Қазақстан Республикасы Үкіметінің 2017 жылғы 4 сәуірдегі №167 қаулысына "
+"сәйкес «Проблемалық кредиттер қоры» Акционерлік қоғамның мемлекеттік пакет "
+"акциясы  Қазақстан Республикасы Қаржы министрлігіне иелікке және қолдануға "
+"тапсырылды. Осыған байланысты, «Проблемалық кредиттер қоры» АҚ тауарды, "
+"жұмысты және қызметті сатып алуды Қазақстан Республикасының 2015 жылғы 4 "
+"желтоқсандағы «Мемлекеттік сатып алул туралы» 434-V Заңына, Қазақстан "
+"Республикасы Қаржы министрлігінің 2015 жылғы 11 желтоқсандағы №648 "
+"бұйрығымен бекітілген Мемлекеттік сатып алуды іске асыру қағидаларына сәйкес "
+"іске асырады.<br><br> Мемлекеттік сатып алулардың бекітілген жылдық жоспары,"
+"мемлкеттік сатып алулардың енгізілген өзгерістерімен және (немесе) "
+"қосымшаларымен жылдық жоспары, сондай-ақ тауарды, жұмысты, қызметті сатып "
+"алуға қатысты хабарландыру туралы ақпарат мемлекеттік сатып алу веб-"
+"порталында қарау үшін мүмкіндік бар:"
+
+#: web/templates/web/zakup-main.html:36
+msgid "Портал государственных закупок"
+msgstr "Мемлекеттік сатып алу порталы"
+
+#: web/templates/web/zakup-main.html:41
+msgid ""
+"2. Закупки осуществляемые в соответствии с внутренними правилами АО “Фонд "
+"проблемных кредитов”"
+msgstr ""
+"2. «Проблемалық кредиттер қоры» АҚ ішкі қағидаларына сәйкес іске асатын "
+"сатып алу"
+
+#: web/templates/web/zakup-main.html:44
+msgid ""
+"В соответствии с подпунктом 8) статьи 1 Закона Республики Казахстан от 04 "
+"декабря 2015 года № 434-V ЗРК «О государственных закупках», к отношениям, "
+"связанным с приобретением товаров, работ, услуг организацией, "
+"специализирующейся на улучшении качества кредитных портфелей банков второго "
+"уровня, для осуществления видов деятельности, предусмотренных пунктом 2 "
+"статьи 5-1 Закона Республики Казахстан «О банках и банковской деятельности в "
+"Республике Казахстан», нормы законодательства о государственных закупках не "
+"применяются."
+msgstr ""
+"Мемлекеттік сатып алу жүйесі туралы 2015 жылғы 4 желтоқсандағы No 434-V "
+"Қазақстан Республикасы Заңының 1-бабының 8) тармақшасына сәйкес екінші "
+"деңгейдегі банктердің кредиттік портфельдерінің сапасын арттыруға "
+"маманданатын ұйымның «Қазақстан Республикасындағы банктер және банк қызметі "
+"туралы» Қазақстан Республикасы Заңының 5-1-бабының 5-1-тармағында көзделген "
+"қызмет үшін тауарларды, жұмыстарды, көрсетілетін қызметтерді сатып алуға "
+"байланысты қатынастарға мемлекеттік сатып алу туралы заңнамаға қолданылмайды."
+
+#: web/templates/web/zakup-main.html:47 web/templates/web/zakup.html:7
+#: web/templates/web/zakup.html:36
+msgid "Внутренние закупки"
+msgstr "Ішкі сатып алу"
+
+#: web/templates/web/zakup-main.html:50
+#, fuzzy
+#| msgid "Внутренние закупки"
+msgid "Архив закупок"
+msgstr "Сатып алу мұрағаты"
+
+#: web/templates/web/zakup.html:34
+msgid ""
+"Объявления о проведении внутренних закупок АО «Фонд проблемных кредитов» "
+"размещаются на портале закупок"
+msgstr ""
+"«Проблемалық несиелер қоры» АҚ ішкі сатып алулары туралы хабарландырулар "
+"сатып алу порталында орналастырылған"
+
+#: web/templates/web/zakup.html:69
+msgid "Евразийский электронный портал"
+msgstr "Еуразиялық электрондық портал"
+
+#~ msgid "Контакты <br> АО «Фонд проблемных кредитов»"
+#~ msgstr "Байланыс <br> «Проблемалық кредиттер қоры» АҚ"
+
+#~ msgid "Шаг 2 - Регистрация и участие на электронной торговой площадке"
+#~ msgstr "2-қадам  Электрондық сауда алаңында тіркелу және қатысу"
+
+#~ msgid ""
+#~ "Инфографика по регистрации и участию на торгах на электронной площадке "
+#~ "государственного реестра АО «Информационный учётный центр»"
+#~ msgstr ""
+#~ "“Ақпараттық-есептеу орталығы\" АҚ мемлекеттік тізілімінің электрондық "
+#~ "алаңында сауда-саттыққа тіркелу және қатысу бойынша инфографика"
+
+#~ msgid ""
+#~ "Важным условием стимулирования роста экономики страны остается "
+#~ "стабилизация ее финансового сектора. Для обеспечения устойчивости всей "
+#~ "финансовой системы государством был разработан пакет мер реагирования в "
+#~ "период кризисных явлений, включающий ряд инструментов, стимулирующих "
+#~ "эффективность работы финансовых институтов, в том числе механизм "
+#~ "оздоровления банковского сектора с целью минимизации уровня неработающих "
+#~ "займов в ссудном портфеле банков.<br> <strong style=\\"
+#~ msgstr ""
+#~ "Оның қаржы секторын тұрақтандыру экономикалық өсуді ынталандырудың "
+#~ "маңызды шарты болып қала береді. Бүкіл қаржы жүйесінің тұрақтылығын "
+#~ "қамтамасыз ету үшін үкімет дағдарыс кезеңінде жедел шаралар кешенін, "
+#~ "соның ішінде қаржы институттарының тиімділігін ынталандыратын бірқатар "
+#~ "құралдарды, соның ішінде банктердің несиелік портфеліндегі жұмыс "
+#~ "істемейтін несиелер деңгейін азайту мақсатында банк секторын сауықтыру "
+#~ "механизмін әзірледі. <br> <күшті style = \\"
+
+#~ msgid "Еще"
+#~ msgstr "Көбірек көрсету"
+
+#~ msgid "120 <br> <span class=\\"
+#~ msgstr ""
+#~ "120\n"
+#~ "млрд теңге \n"
+#~ "Сомасына  "
+
+#~ msgid "388 <br> <span class=\\"
+#~ msgstr "Сомасына экономикалық айналымға активтер тартылды"
+
+#~ msgid "млрд тенге"
+#~ msgstr "млрд теңге"
+
+#~ msgid "Перечень имущества дочерниних организаций к реализаций"
+#~ msgstr "Еншілес ұйымдардың сатуға арналған мүлкінің тізбесі"
+
+#~ msgid "Структура активов и дочерние организаций"
+#~ msgstr "Активтердің және еншілес ұйымдардың құрылымы"
+
+#~ msgid ""
+#~ "Фонд реализует активы, взысканные по неработающим займам, включая "
+#~ "земельные участки, коммерческую недвижимость, движимое имущество."
+#~ msgstr ""
+#~ "Қор жер учаскелерін, коммерциялық жылжымайтын мүлікті, жылжымалы мүлікті "
+#~ "қоса алғанда, жұмыс істемейтін қарыздар бойынша өндіріп алынған "
+#~ "активтерді сатады."
+
+#~ msgid ""
+#~ "Приглашаем потенциальных покупателей приобрести имущество на торгах, "
+#~ "проводимых на электронной торговой площадке государственного реестра."
+#~ msgstr ""
+#~ "Әлеуетті сатып алушыларды мүлікті мемлекеттік тізілімнің электрондық "
+#~ "сауда алаңында өткізілетін сауда-саттықта сатып алуға шақырамыз."

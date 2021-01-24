@@ -1,0 +1,180 @@
+{% load static %}
+{% load i18n %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>{{active.title}}</title>
+        <meta name="description" content="Фонд реализует активы, взысканные по неработающим займам, включая земельные участки, коммерческую недвижимость, движимое имущество. Приглашаем потенциальных покупателей приобрести имущество на торгах, проводимых на электронной торговой площадке государственного реестра.">
+        <meta name="title" content="">
+        <link rel="canonical" href="https://amp.dev/ru/documentation/guides-and-tutorials/start/create/basic_markup/">
+        <script async src="https://cdn.ampproject.org/v0.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{% static "css/style.css"%}">
+        <link rel="stylesheet" href="{% static "css/home.css"%}">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Mukta&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Rhodium+Libre&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" href="/media/file/favicon_tINNSHM.ico" >
+    </head>
+    <body>
+        
+        {% include "web/includes/header.html" %}
+        {% get_current_language as LANGUAGE_CODE %}
+    
+        <section id="layout-content">
+            <div id="cards-active" class="container d-flex">
+        <div class="filter">
+            <form action="/active-page">
+                <div class="first-five__filter">
+                    <select name="type" id="" style="font-size: 13px;">
+                        <option style="font-size: 13px;" value="default">{% trans "Тип торгов" %}</option>
+                        <option style="font-size: 13px;" value="IN">{% trans "На повышение цены" %}</option>
+                        <option style="font-size: 13px;" value="DE">{% trans "На понижение цены" %}</option>
+                    </select>
+                    <select name="category" id="" style="font-size: 13px;">
+                        <option style="font-size: 13px;" value="default">{% trans "Категории" %}</option>
+                        {% for val in sel_categories %}
+                            <option style="font-size: 13px;" value="{{ val.id }}">{{ val.name }}</option>
+                        {% endfor %}
+                    </select>
+                    <select name="region" id="" style="font-size: 13px;">
+                        <option style="font-size: 13px;" value="default">{% trans "Регионы" %}</option>
+                        {% for val in sel_regions %}
+                            <option style="font-size: 13px;" value="{{ val.id }}">{{ val.name }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+                <button class="filter-search__button">
+                    {% trans "ПОИСК" %}
+                </button>
+            </form>
+        </div>
+        <div class="active-content">
+            <h1 class="active-title">
+                {{ active.title }}
+            </h1>
+            <div class="active-content__top d-flex">
+                <div class="active-img">
+                    <img src="/media/{{ active.image }}" alt="">
+                </div>
+                <div class="active-price">
+                    <div class="price-top d-flex">
+                        <h6>{% trans "Цена:" %}</h6>
+                        <h5>{{ active.price }}
+                             {% if LANGUAGE_CODE == 'ru' %} <span class="stock"> тг</span>
+                             {% elif LANGUAGE_CODE == 'en' %} <span class="stock"> kzt</span> 
+                             {% elif LANGUAGE_CODE == 'kk' %} <span class="stock"> тг</span> 
+                             {% endif %}
+                        </h5> 
+                        
+                    </div>
+                    <button class="price-down">
+                        {{ active.get_as_type_display }}
+                    </button>
+                </div>
+                <div class="active-published">
+                    <h6>{% trans "Добавлено" %}</h6>
+                    <h5>{{ active.creation_date }}</h5>
+                </div>
+            </div>
+            <div class="active-description">
+                <div class="description-top d-flex">
+                    <div class="info-img__descr">
+                        <img src="/media/file/Info.png" alt="">
+                    </div>
+                    <h6 class="description-info__text">
+                        {% trans "Описание" %}
+                    </h6>
+                </div>
+                <div class="description-text">
+                    <p>
+                        {{ active.description|safe }}
+                    </p>
+                </div>
+            </div>
+            <div class="active-more__info d-flex justify-content-between">
+                <div class="more-info">
+                    <div class="more-info__top d-flex">
+                        <div class="info-img__more">
+                            <img src="/media/file/Info.png" alt="">
+                        </div>
+                        <h6 class="description-info__text">
+                            {% trans "Дополнительная информация" %}
+                        </h6>
+                    </div>
+                    <div class="more-info__detail">
+                        <h6>Ссылка на торги:</h6>
+                        <a href="{{ active.bargaining_link }}" target="_blank">{{ active.bargaining_link }}</a>
+                        <div class="change-div d-flex">
+                            <p>{% trans "Дата проведения торгов:" %}</p>
+                            <h6>{{ active.performance_date }}</h6>
+                        </div>
+                        {% if active.min_price != null %}
+                            <div class="price-change-div d-flex">
+                                <p>{% trans "Минимальная цена:" %}</p>
+                                <h6>{{ active.min_price }}</h6>
+                            </div>
+                        {% endif %}
+                    </div>
+                    <a href="/step2" class="step-two">
+                        {% trans "Шаг 2: Регистрация и участие на торгах" %}
+                    </a>
+                </div>
+                <div class="geolacation">
+                    <div class="more-info__top d-flex">
+                        <div class="info-img__more">
+                            <img src="/media/file/Info.png" alt="">
+                        </div>
+                        <h6 class="description-info__text">
+                            {% trans "Дополнительная информация" %}
+                        </h6>
+                    </div>
+                    <div class="geolocation-info">
+                        <p>
+                            {{ location }}
+                        </p>
+                        <div id="map" style="max-width: 400px; min-width: 300px;width: 100%; height: 300px"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>        </section>
+        {% include "web/includes/footer.html" %}
+        <script src="https://api-maps.yandex.ru/2.1/?apikey=646e85ff-73ab-4594-85d1-3b90de29a2c9&lang=ru_RU" type="text/javascript">
+        </script>
+        <script class="ymaaap" type="text/javascript" data-coordinates="{{ coordinates }}">
+            ymaps.ready(init);
+            function init(){
+                // Создание карты.
+                var myMap = new ymaps.Map("map", {
+                    // Координаты центра карты.
+                    // Порядок по умолчанию: «широта, долгота».
+                    // Чтобы не определять координаты центра карты вручную,
+                    // воспользуйтесь инструментом Определение координат.
+                    center: document.querySelector('.ymaaap').dataset.coordinates.split(' ').map(parseFloat),
+                    // Уровень масштабирования. Допустимые значения:
+                    // от 0 (весь мир) до 19.
+                    zoom: 11    
+                }
+            );
+    }
+        </script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        <script>
+               document.addEventListener('scroll', function(){
+                if (window.pageYOffset != true) {
+                    document.querySelector('.image-wrap').parentElement.removeChild(
+                        document.querySelector('.image-wrap')
+                    )
+                }
+            })
+        </script>
+    </body>
+</html>

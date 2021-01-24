@@ -1,0 +1,30 @@
+{% load static %}
+{% load i18n %}
+<!DOCTYPE html>
+<html>
+    {% include "web/includes/head.html" %}
+    <body>
+        
+        {% include "web/includes/header.html" %}
+        
+        <div class="not-page__back">
+            <div class="container">
+                <div class="site-brandbook">
+                    <img src="" alt="">
+                </div>
+                <div class="error-content">
+                    <h6 class="notfound">{% trans "404" %}</h6>
+                    <p class="notfound-content">
+                        {% trans "Страница не найдена" %}
+                    </p>
+                    <a onclick="javascript:history.back(); return false;">{% trans "Вернуться назад" %}</a>
+                </div>
+            </div>
+        </div>
+        {% include "web/includes/footer.html" %}
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        <link rel="stylesheet" property="stylesheet" href="/web/modules/system/assets/css/framework.extras.css">
+    </body>
+</html>

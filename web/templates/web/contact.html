@@ -1,0 +1,128 @@
+{% load static %}
+{% load i18n %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>{% trans "Контакты" %}</title>
+        <meta name="description" content="Фонд реализует активы, взысканные по неработающим займам, включая земельные участки, коммерческую недвижимость, движимое имущество. Приглашаем потенциальных покупателей приобрести имущество на торгах, проводимых на электронной торговой площадке государственного реестра.">
+        <meta name="title" content="">
+        <link rel="canonical" href="https://amp.dev/ru/documentation/guides-and-tutorials/start/create/basic_markup/">
+        <script async src="https://cdn.ampproject.org/v0.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{% static "css/style.css"%}">
+        <link rel="stylesheet" href="{% static "css/home.css"%}">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Mukta&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Rhodium+Libre&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" href="/media/file/favicon_tINNSHM.ico" >
+    </head>
+    <style>
+        #gis {
+            position: relative;
+            padding: 15px; 
+            border-radius: 10px; 
+            background-color: white;
+            left: -30px;
+        }
+        .card-shadows {
+            box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+            transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+        }
+
+        .card-shadows:hover {
+            box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+        }
+    </style>
+    <body>
+        {% include "web/includes/header.html" %}
+        {% get_current_language as LANGUAGE_CODE %}
+        <section id="layout-content">
+            <div class="contact" style="margin-top: 60px;">
+                <div class="container d-flex flex-wrap justify-content-around">
+                <div class="contact-block">
+                    <h4 class="contact-title" style="font-size: 24px;">
+                        {% trans "Наши Контакты" %}
+                    </h4>
+                    <div class="contact-block">
+                        <div class="phone d-flex">
+                            <div>
+                                <img src="/media/file/call.png" alt="">
+                            </div>
+                            <div class="phone-text">
+                                <p>{% trans "Канцелярия\Приемная" %}</p>
+                                <a href="tel:87273560971">
+                                    +7(727) 356-09-71, <br> <a id="phone-nuber2" href="tel:87273560972">+7(727) 356-09-72</a>
+                                </a>
+                                {% if LANGUAGE_CODE == 'ru' %}
+                                <p class="col-center">По вопросам реализации имущества обращайтесь по номеру:</p>
+                                {% elif LANGUAGE_CODE == 'kk' %}
+                                <p class="col-center">Мүлікті сату үшін мына телефонға хабарласыңыз:</p>
+                                {% elif LANGUAGE_CODE == 'en' %}
+                                <p class="col-center">For the sale of property, please call:</p>
+                                {% endif %}
+                                <a href="tel:87273550111">+7(727) 355-01-11</a>
+                            </div>
+                        </div>
+                        <div class="email d-flex">
+                            <div>
+                                <img src="/media/message.png" alt="">
+                            </div>
+                            <div class="email-text">
+                                <a href="mailto:info@fpl.kz">info@fpl.kz</a>
+                            </div>
+                        </div>
+                        <div class="geoposition d-flex">
+                            <div>
+                                <img src="/media/file/gps.png" alt="">
+                            </div>
+                            <div class="geopos-text">
+                                <p>
+                                    {% trans "050010, пр. Достык 160," %} <br>
+                                    {% trans "г. Алматы, Республика Казахстан" %}
+                                </p>
+                                <a id="gis" class="st2-st card-shadows" href="https://go.2gis.com/5y5nk89" target="_blank"><img style="max-width: 70%;" src="/media/file/214px-2GIS_logo.svg.png"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="reverse-contact">
+                    <h4 class="contact-title" style="font-size: 24px;">{% trans "Оставьте ваше сообщение" %}</h4>
+                    <form action="/" class="d-flex flex-column" >
+                        {% csrf_token %}
+                        <input type="text" placeholder="{% trans "ФИО" %}" name="fullname">
+                        <input type="text" placeholder="{% trans "Телефон" %}" name="phone">
+                        <input type="text" placeholder="{% trans "Email" %}" name="email">
+                        <textarea name="message" id="" cols="30" rows="10" placeholder="{% trans "Обращение" %}"></textarea>
+                        {% if LANGUAGE_CODE == 'ru' %}
+                        <button class="obr-button">Отправить</button>
+                        {% elif LANGUAGE_CODE == 'kk' %}
+                        <button class="obr-button">Жіберу</button>
+                        {% elif LANGUAGE_CODE == 'en' %}
+                        <button class="obr-button">Send</button>
+                        {% endif %}
+                    </form>
+                </div>
+                </div>
+                </div>
+
+                <div class="home-maps">
+                    <div class="container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11627.361172325232!2d76.9591751!3d43.233808!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5e6e85ba45b5dab3!2z0KTQvtC90LQg0L_RgNC-0LHQu9C10LzQvdGL0YUg0LrRgNC10LTQuNGC0L7Qsg!5e0!3m2!1sru!2skz!4v1600721114418!5m2!1sru!2skz" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    </div>
+
+    
+</div>         </section>
+
+        {% include "web/includes/footer.html" %}
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        <link rel="stylesheet" property="stylesheet" href="/web/modules/system/assets/css/framework.extras.css">
+    </body>
+</html>

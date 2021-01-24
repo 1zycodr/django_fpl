@@ -1,0 +1,535 @@
+{% load static %}
+{% load i18n %}
+{% get_current_language as LANGUAGE_CODE %}
+<!DOCTYPE html>
+<html amp>
+    <head>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+          
+            gtag('config', 'UA-178506308-1');
+          </script>
+        <meta charset="utf-8">
+        <title>{% trans "ФОНД ПРОБЛЕМНЫХ КРЕДИТОВ" %}</title>
+        <meta name="description" content="Фонд реализует активы, взысканные по неработающим займам, включая земельные участки, коммерческую недвижимость, движимое имущество.">
+        <meta name="title" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{% static "css/slick.css" %}">
+        <!-- <link rel="stylesheet" href="{% static "css/slick-theme.css" %}"> -->
+        <link rel="stylesheet" href="{% static "css/home.css"%}">
+        <link rel="stylesheet" href="{% static "css/style.css"%}">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Mukta&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Rhodium+Libre&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" href="/media/file/favicon_tINNSHM.ico" >
+        <style>
+            #gis {
+                position: relative;
+                padding: 15px; 
+                border-radius: 10px; 
+                background-color: white;
+                left: -30px;
+            }
+            .card-shadows {
+                box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+                transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+            }
+    
+            .card-shadows:hover {
+                box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+            }
+        </style>
+    </head>
+
+    <body>    
+    {% include "web/includes/header.html" %}
+    <section id="layout-content">
+        <div class="first-block">
+    <div class="container d-flex flex-wrap" style="max-width: 1336px;">
+    <div class="first-block__inner">
+        <div class="block-step1 d-flex align-items-center justify-content-around">
+            <div class="blcok-step__img">
+                <img src="/media/file/House.png" alt="">
+            </div>
+            <div class="block-step__content">
+                <h4>{% trans "Шаг 1" %}</h4>
+                <p>{% trans "Выбор объекта имущества" %}</p>
+                <a href="/active-page">{% trans "Подробнее" %}</a>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div class="block-step2 d-flex align-items-center justify-content-around">
+            <div class="blcok-step__img">
+                <img src="/media/file/Deal_Agreement.png" alt="">
+            </div>
+            <div class="block-step__content">
+                <h4>{% trans "Шаг 2" %}</h4>
+                <p>{% trans "Регистрация и участие на торгах" %}</p>
+                <a href="/step2">{% trans "Подробнее" %}</a>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div class="block-step3 d-flex align-items-center justify-content-around">
+            <div class="blcok-step__img">
+                <img src="/media/file/House_1.png" alt="">
+            </div>
+            <div class="block-step__content">
+                <h4>{% trans "Шаг 3" %}</h4>
+                <p>{% trans "Оформление сделки" %}</p>
+                <a href="/step3">{% trans "Подробнее" %}</a>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <div class="first-center">
+        <div class="slider-center">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="false">
+                <ol id="carousel-indicators" class="carousel-indicators">
+                  <li class="slider-indicator-points" data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                  <li class="slider-indicator-points" data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                  <li class="slider-indicator-points" data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                      <video controls="controls" autoplay muted>
+                       <source src="/media/file/IMG_8460.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+                       Тег video не поддерживается вашим браузером. 
+                      </video>
+                  </div>
+                </div>
+                <a id="carousel-control-prev" class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a id="carousel-control-next" class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+        </div>
+    </div>
+    <div class="first-block__right">
+        {% if LANGUAGE_CODE == 'ru' %}
+        <h4>Реализация активов</h4>
+        {% elif LANGUAGE_CODE == 'en' %}
+        <h4>FUND PROPERTY SELL</h4>
+        {% elif LANGUAGE_CODE == 'kk' %}
+        <h4>ҚОР МҮЛІГІН САТУ</h4>
+        {% endif %}
+        {% if LANGUAGE_CODE == 'ru' %}
+        <p>
+            Фонд реализует активы, взысканные по неработающим займам, включая земельные участки, коммерческую недвижимость, движимое имущество.<br><br>Приглашаем потенциальных покупателей приобрести имущество на торгах, проводимых на электронной торговой площадке государственного реестра.
+        </p>
+        {% elif LANGUAGE_CODE == 'en' %}
+        <p>
+            The Fund sells property objects recovered on non-performing loans, including land, commercial real estate, movable property. <br><br>We invite potential buyers to purchase property at auctions held on the electronic trading platform
+        </p>
+        {% elif LANGUAGE_CODE == 'kk' %}
+        <p>
+            Қор жұмыс істемейтін қарыздар бойынша өтеп алынған активтерді сату, соның ішінде жер телімдері, коммерциялық жылжымайтын мүлік, жылжымалы мүлікті сатады.<br><br> Әлеуетті сатып алушыларды мемлекеттік тізілімнің электрондық сауда алаңында өтетін сауда-саттықтан мүлік сатып алуға шақырамыз.
+        </p>
+        {% endif %}
+        
+        <div class="first-block__form">
+            <form action="/active-page">
+                <div class="fr-bl-form__top">
+                    <input type="text" placeholder="{% trans 'Поиск по слову' %} " name="find">
+                    <select name="type" id="" style="font-size: 13px;">
+                        <option style="font-size: 13px;" value="default">{% trans "Тип торгов" %}</option>
+                        <option style="font-size: 13px;" value="IN">{% trans "На повышение цены" %}</option>
+                        <option style="font-size: 13px;" value="DE">{% trans "На понижение цены" %}</option>
+                    </select>
+                    
+                </div>
+                <div class="fr-bl-form__bottom">
+                    <select name="category" id="" style="font-size: 13px;">
+                        <option style="font-size: 13px;" value="default">{% trans "Категории" %}</option>
+                        {% for val in sel_categories %}
+                            <option style="font-size: 13px;" value="{{ val.id }}">{{ val.name }}</option>
+                        {% endfor %}
+                    </select>
+                    <select name="region" id="" style="font-size: 13px;">
+                        <option style="font-size: 13px;" value="default">{% trans "Регионы" %}</option>
+                        {% for val in sel_regions %}
+                            <option style="font-size: 13px;" value="{{ val.id }}">{{ val.name }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+                <button class="fr-bl-form__button">
+                    {% trans "Поиск" %}
+                </button>
+            </form>
+        </div>
+    </div>
+    
+    </div>
+    </div>
+    
+    <div class="mission">
+    <div class="container">
+    <h1 class="mission-title">
+        {% trans "Миссия АО “Фонд проблемных кредитов”" %}
+    </h1>
+    <p class="mission-par">
+        {% trans "Содействие оздоровлению национальной экономики через (1) улучшение качества кредитных портфелей банков второго уровня путем выкупа неработающих активов, (2) вовлечение в экономический оборот неработающих активов посредством их оздоровления и реализации." %}
+    </p>
+    </div>
+    </div>
+    <div class="fpr-result">
+    <div class="container">
+    <p id="w1" class="fpk-result__title" style="margin-top: 0px;">
+        {% trans "Наши достижения" %}
+    </p>
+    <p>
+        {% trans "В результате деятельности Фонда по оздоровлению банковского сектора и вовлечению активов в экономический оборот путем реструктуризации проектов, взыскания задолженности и реализации объектов имущества было достигнуто" %}
+    </p>
+    <div class="result-card d-flex">
+        <div class="first-left">
+            {% if LANGUAGE_CODE == 'ru' %}
+            <p class="ffff">
+                {% trans "Сохранено и создано рабочих мест" %}
+            </p>
+            {% elif LANGUAGE_CODE == 'en' %}
+            <p class="ffff">
+                Saved and <br> created workplaces
+            </p class="ffff">
+            {% elif LANGUAGE_CODE == 'kk' %}
+            <p class="ffff">
+                Жұмыс орындары <br> сақталды және құрылды
+            </p>
+            {% endif %}
+            <p class="ffff2">261 000</p>
+        </div>
+        <div class="second-left">
+            {% if LANGUAGE_CODE == 'ru' %}
+            <p class="fff">
+                Снижена долговая <br> нагрузка <br> граждан РК <br> на сумму
+            </p> 
+            {% elif LANGUAGE_CODE == 'en' %}
+            <p class="fff">The debt <br> burden of citizens <br> of Kazakhstan </p>
+            {% elif LANGUAGE_CODE == 'kk' %}
+            <p class="fff">Сомасына ҚР <br> азаматтарының қарыздық <br> жүктемесі азайды </p>
+            {% endif %}
+            {% if LANGUAGE_CODE == 'ru' %}
+            <p class="fff2">120 млрд тенге</p>
+            {% elif LANGUAGE_CODE == 'en' %}
+            <p class="fff2">of 120 billion tenge has been reduced</p>
+            {% elif LANGUAGE_CODE == 'kk' %}
+            <p class="fff2">120 млрд теңге </p>
+            {% endif %}
+            
+        </div>
+        <div class="center">
+            {% if LANGUAGE_CODE == 'ru' %}
+            <P class="fff">
+                {% trans "Вовлечено активов в <br> экономический оборот на сумму" %}
+            </P >
+            {% elif LANGUAGE_CODE == 'en' %}
+            <P class="fff">
+                Assets involved into economic turnover in the 
+            </P >
+            {% elif LANGUAGE_CODE == 'kk' %}
+            <P class="fff">
+                Сомасына экономикалық <br> айналымға активтер тартылды
+            </P >
+            {% endif %}
+            {% if LANGUAGE_CODE == 'ru' %}
+            <p class="fff2">388 млрд тенге</p>
+            {% elif LANGUAGE_CODE == 'en' %}
+            <p class="fff2">amount of 388 billion tenge</p>
+            {% elif LANGUAGE_CODE == 'kk' %}
+            <p class="fff2">388 <br> млрд теңге</p>
+            {% endif %}
+        </div>
+        <div class="second-right">
+            {% if LANGUAGE_CODE == 'ru' %}
+            <p class="fff">
+                {% trans "Оздоровлено проектов" %}       
+            </p>
+            {% elif LANGUAGE_CODE == 'kk' %}
+            <p class="fff">
+                36 <br> компанияның       
+            </p>
+            {% elif LANGUAGE_CODE == 'en' %} 
+            <p class="fff">
+                Have been rehabilitated
+            </p>
+            {% endif %}
+            {% if LANGUAGE_CODE == 'ru' %}
+            <p class="fff2">{% trans "36 <br> компаний" %}</p>
+            {% elif LANGUAGE_CODE == 'en' %}
+            <p class="fff2"> of 36 <br> companies</p>
+            {% elif LANGUAGE_CODE == 'kk' %}
+            <p class="fff2">Жобалары сауықтырылды </p>
+            {% endif %}
+        </div>
+        <div class="first-right">
+            {% if LANGUAGE_CODE == 'ru' %}
+            <p class="fff" style="color: #165567; padding-top: 40px;" id="last-right__result-title" style="color:#165567;padding-top: 40px;">
+                {% trans "Обеспечено налоговых поступлений в бюджет" %}
+            </p>
+            {% elif LANGUAGE_CODE == 'en' %}
+            <p class="fff" style="color: #165567; padding-top: 40px;" id="last-right__result-title" style="color:#165567;padding-top: 40px;">
+                Tax revenues were <br> provided to the budget
+            </p>
+            {% elif LANGUAGE_CODE == 'kk' %}
+            <p class="fff" style="color: #165567; padding-top: 40px;" id="last-right__result-title" style="color:#165567;padding-top: 40px;">
+                Бюджетке салықтық түсімдер қамтамасыз етілді
+            </p>
+            {% endif %}
+            {% if LANGUAGE_CODE == 'ru' %}
+            <p class="fff2" style="color: #165567; margin-top: -20px;">{% trans "свыше <span class=\"cifra\">25 </span>  млрд тенге" %}</p>
+            {% elif LANGUAGE_CODE == 'en' %}
+            <p class="fff2" style="color: #165567; margin-top: -20px;">Over <br> 25 billion <br> tenge </p>
+            {% elif LANGUAGE_CODE == 'kk' %}
+            <p class="fff2" style="color: #165567; margin-top: -20px;">25 млрд <br> теңгеден астам</p>
+            {% endif %}
+        </div>
+    </div>
+    </div>
+    </div>
+    <div class="news">
+    <div class="container" style="max-width: 1200px; margin: auto">
+    <div class="news-top d-flex justify-content-between">
+        <p style="margin-bottom: .5rem;
+        font-weight: 500;
+        line-height: 1.2; font-size: 2.5rem; margin-top: 0;">{% trans "Новости" %}</p >
+        {% if LANGUAGE_CODE == 'ru' %}
+        <a href="/news-page">Еще</a>
+        {% elif LANGUAGE_CODE == 'kk' %}
+        <a style="height: fit-content; padding-bottom: 10px;" href="/news-page">Көбірек көрсету</a>
+        {% elif LANGUAGE_CODE == 'en' %}
+        <a style="height: 30px;" href="/news-page">More</a>
+        {% endif %}
+    </div>
+    <div class="news-card d-flex flex-wrap">
+        {% for news in news_list %}
+                <a href="/news/{{ news.id }}">
+                    <div class="news-item">
+                        <img src="/media/{{ news.image }}" alt="">
+                        <div class="news-img__text">
+                            <p>
+                                {{ news.title }}
+                            </p>
+                            <!-- <h6 class="news-date__publish">
+                                {{ news.creation_date|date:'d F Y' }}
+                            </h6> -->
+                        </div>
+                    </div>
+                </a>
+            {% endfor  %}
+    </div>
+    </div>
+    </div>
+    
+    <div class="sponsors">
+    <div class="container d-flex justify-content-between flex-wrap"> 
+    <div>
+        <a href="https://prz.enbek.gov.kz/" target="_blank">
+            <img src="/media/file/index.png" alt="">
+        </a>
+    </div>
+    <div>
+        <a href="https://www.enbek.kz/kk" target="_blank">
+            <img src="/media/file/index1.png" alt="">
+        </a>
+    </div>
+    <div>
+        <a href="http://www.minfin.gov.kz/irj/portal/anonymous" target="_blank">
+            <img src="/media/file/minfin.png" alt="">
+        </a>
+    </div>
+    <div>
+        <a href="http://strategy2050.kz/ru" target="_blank">
+            <img src="/media/file/kz-2050.png" alt="">
+        </a>
+    </div>
+    <div>
+        <a href="https://www.akorda.kz/ru" target="_blank">
+            <img src="/media/file/bb2_zxlmnJP.png" alt="">
+        </a>
+    </div>
+    <div>
+        <a href="http://www.primeminister.kz" target="_blank">
+            <img style="width: 180px; object-fit:scale-down" src="/media/file/bb.png" alt="">
+        </a>
+    </div>
+    <div>
+        <a href="http://egov.kz/wps/portal/index" target="_blank">
+            <img src="/media/file/logo-beta.png" alt="">
+        </a>
+    </div>
+    </div>
+    </div>
+    
+    <div class="contact">
+    <div class="container d-flex flex-wrap">
+    <div class="banner">
+        <img src="/media/file/plakat.png">
+        <p class="contact-info">
+            {% trans "Если Вам известно о правонарушениях, совершаемых третьими лицами в отношении Фонда, либо работниками Фонда, Вы можете отправить соответствующее сообщение на электронный ящик: senim@fpl.kz для принятия мер." %}
+        </p>
+    </div>
+    <div class="contact-block">
+        <p class="contact-title">
+            {% trans "Наши Контакты" %}
+        </p>
+        <div class="contact-block">
+            <div class="phone d-flex">
+                <div>
+                    <img src="/media/file/phone_celuler_contact_call.png" alt="">
+                </div>
+                <div class="phone-text">
+                    <p>{% trans "Канцелярия\Приемная" %}</p>
+                    <a href="tel:87273560971">
+                        +7(727) 356-09-71, <br> <a id="phone-nuber2" href="tel:87273560972">+7(727) 356-09-72</a>
+                    </a>
+                    {% if LANGUAGE_CODE == 'ru' %}
+                    <p class="col-center">По вопросам реализации имущества обращайтесь по номеру:</p>
+                    {% elif LANGUAGE_CODE == 'kk' %}
+                    <p class="col-center">Мүлікті сату үшін мына телефонға хабарласыңыз:</p>
+                    {% elif LANGUAGE_CODE == 'en' %}
+                    <p class="col-center">For the sale of property, please call:</p>
+                    {% endif %}
+                    <a href="tel:87273550111">+7(727) 355-01-11</a>
+                </div>
+            </div>
+            <div class="email d-flex">
+                <div>
+                    <img src="/media/file/colored_line.png" alt="">
+                </div>
+                <div class="email-text">
+                    <a href="mailto:info@fpl.kz">info@fpl.kz</a>
+                </div>
+            </div>
+            <div class="geoposition d-flex">
+                <div>
+                    <img src="/media/file/Gps.png" alt="">
+                </div>
+                <div class="geopos-text">
+                    <p>
+                        {% trans "050010, пр. Достык 160," %} <br>
+                        {% trans "г. Алматы, Республика Казахстан" %}
+                    </p>
+                    <a id="gis" style="
+                        position: relative;
+                        left: -40px;
+                    " class="st2-st card-shadows" href="https://go.2gis.com/5y5nk89" target="_blank"><img style="max-width: 70%;" src="/media/file/214px-2GIS_logo.svg.png"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="banner" id="banner2">
+        <img src="/media/file/plakat.png">
+        <p class="contact-info">
+            {% trans "Если Вам известно о правонарушениях, совершаемых третьими лицами в отношении Фонда, либо работниками Фонда, Вы можете отправить соответствующее сообщение на электронный ящик: senim@fpl.kz для принятия мер." %}
+        </p>
+    </div> -->
+    <div class="reverse-contact" style="margin-bottom: 30px;">
+        <h4 class="contact-title">{% trans "Оставьте ваше сообщение" %}</h4>
+        <form action="/" class="d-flex flex-column">
+            {% csrf_token %}
+            <input type="text" placeholder="{% trans "ФИО" %}" name="fullname">
+            <input type="text" placeholder="{% trans "Телефон" %}" name="phone">
+            <input type="text" placeholder="{% trans "Email" %}" name="email">
+            <textarea name="" id="" cols="30" rows="10" placeholder="{% trans "Обращение" %}"></textarea>
+            {% if LANGUAGE_CODE == 'ru' %}
+            <button class="obr-button">Отправить</button>
+            {% elif LANGUAGE_CODE == 'kk' %}
+            <button class="obr-button">Жіберу</button>
+            {% elif LANGUAGE_CODE == 'en' %}
+            <button class="obr-button">Send</button>
+            {% endif %}
+        </form>
+    </div>
+    </div>
+    </div>
+<div class="home-maps">
+    <div class="container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11627.361172325232!2d76.9591751!3d43.233808!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5e6e85ba45b5dab3!2z0KTQvtC90LQg0L_RgNC-0LHQu9C10LzQvdGL0YUg0LrRgNC10LTQuNGC0L7Qsg!5e0!3m2!1sru!2skz!4v1600721114418!5m2!1sru!2skz" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </div>
+
+    
+</div>        </section>
+        {% include "web/includes/footer.html" %}
+        
+        </script>
+        <script  src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script  src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="{% static 'js/slick.min.js'%}"></script>
+        <script>
+            $('.result-card').slick({
+            centerMode: true,
+            centerPadding: '60px',
+            autoplay: true,
+            autoplaySpeed: 2000,
+            slidesToShow: 3,
+            responsive: [
+                {
+                breakpoint: 768,
+                settings: {
+                    arrows: false,
+                    centerMode: true,
+                    centerPadding: '40px',
+                    slidesToShow: 1
+                }
+                },
+                {
+                breakpoint: 320,
+                settings: {
+                    arrows: false,
+                    centerMode: true,
+                    centerPadding: '40px',
+                    slidesToShow: 1
+                }
+                }, 
+                {
+                breakpoint: 1248,
+                settings: {
+                    arrows: false,
+                    centerMode: true,
+                    centerPadding: '40px',
+                    slidesToShow: 3
+                }
+                }
+            ]
+            });
+        </script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        <script>
+            function slideHeight (){
+            let slide_active = document.querySelectorAll('div.slick-active')
+            let slide_active2 = document.querySelectorAll('div.slick-slide')
+            
+            if (slide_active2) {
+                for (let elem of slide_active2) {
+                    elem.style.height = '190px'
+                    elem.style.marginTop = '50px'
+                    // elem.style.width = '330px'
+                }
+            }
+            if (slide_active[0]) {
+                slide_active[0].style.height = '230px'
+                slide_active[0].style.marginTop = '30px'
+            }
+            if (slide_active[2]) {
+                slide_active[2].style.height = '230px'
+                slide_active[2].style.marginTop = '30px'
+            }
+            if (slide_active[1]) {
+                slide_active[1].style.height = '300px'
+                slide_active[1].style.marginTop = '0px'
+            }
+            }
+            setInterval(slideHeight, 50)
+        </script>
+ 
+
+    </body>
+</html>

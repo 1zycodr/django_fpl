@@ -1,0 +1,66 @@
+{% load static %}
+{% load i18n %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>{% trans "Закупки АО ФПК" %}</title>
+        <meta name="description" content="Фонд реализует активы, взысканные по неработающим займам, включая земельные участки, коммерческую недвижимость, движимое имущество. Приглашаем потенциальных покупателей приобрести имущество на торгах, проводимых на электронной торговой площадке государственного реестра.">
+        <meta name="title" content="">
+        <link rel="canonical" href="https://amp.dev/ru/documentation/guides-and-tutorials/start/create/basic_markup/">
+        <script async src="https://cdn.ampproject.org/v0.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{% static "css/style.css"%}">
+        <link rel="stylesheet" href="{% static "css/home.css"%}">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Mukta&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Rhodium+Libre&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" href="/media/file/favicon_tINNSHM.ico" >
+        <style>
+            body {
+                text-align: justify;
+            }
+        </style>
+    </head>
+    <body>
+        {% include "web/includes/header.html" %}
+        {% get_current_language as LANGUAGE_CODE %}
+        <section id="layout-content">
+            <div class="finot-img__top"></div>
+<div class="container" style="margin-bottom: 70px;">
+    <div class="fin-top__block">
+        <h1 class="fin-title">{% trans "1. Государственные закупки" %}</h1>
+        <p class="fin-par">
+            {% trans "Согласно постановления Правительства Республики Казахстан от 4 апреля 2017 года №167 государственный пакет акций Акционерного общества «Фонд проблемных кредитов» передан во владение и пользование Министерству финансов Республики Казахстан. В связи с чем АО «Фонд проблемных кредитов» осуществляет приобретение товаров, работ и услуг в соответствии с Законом Республики Казахстан  «О государственных закупках» от 4 декабря 2015 года № 434-V, Правилами осуществления государственных закупок, утвержденных приказом Министра финансов Республики Казахстан от 11 декабря 2015 года № 648.<br><br>Утвержденный годовой план государственных закупок, годовой план государственных закупок с внесенными изменениями и(или) дополнениями, а также информация об объявлениях касательно приобретения товаров, работ, услуг доступны для просмотра на веб-портале государственных закупок:" %}
+        </p>
+        <a target="_blank" href="https://www.goszakup.gov.kz/ru/search/announce?filter%5Bname%5D=&filter%5Bcustomer%5D=%D0%A4%D0%BE%D0%BD%D0%B4+%D0%BF%D1%80%D0%BE%D0%B1%D0%BB%D0%B5%D0%BC%D0%BD%D1%8B%D1%85+%D0%BA%D1%80%D0%B5%D0%B4%D0%B8%D1%82%D0%BE%D0%B2&filter%5Bnumber%5D=&filter%5Byear%5D=&filter%5Bmethod%5D%5B%5D=3&filter%5Bmethod%5D%5B%5D=2&filter%5Bmethod%5D%5B%5D=7&filter%5Bmethod%5D%5B%5D=6&filter%5Bmethod%5D%5B%5D=50&filter%5Bmethod%5D%5B%5D=52&filter%5Bmethod%5D%5B%5D=22&filter%5Bamount_from%5D=&filter%5Bamount_to%5D=&filter%5Btrade_type%5D=&filter%5Bstart_date_from%5D=&filter%5Bstart_date_to%5D=&filter%5Bend_date_from%5D=&filter%5Bend_date_to%5D=&filter%5Bitog_date_from%5D=&filter%5Bitog_date_to%5D=&smb=" class="fin-button">
+            {% trans "Портал государственных закупок" %}
+        </a>
+    </div>
+    <div class="fin-bottom__block">
+        <h1 class="fin-title">
+            {% trans "2. Закупки осуществляемые в соответствии с внутренними правилами АО “Фонд проблемных кредитов”" %}
+        </h1>
+        <p class="fin-par">
+            {% trans "В соответствии с подпунктом 8) статьи 1 Закона Республики Казахстан от 04 декабря 2015 года № 434-V ЗРК «О государственных закупках», к отношениям, связанным с приобретением товаров, работ, услуг организацией, специализирующейся на улучшении качества кредитных портфелей банков второго уровня, для осуществления видов деятельности, предусмотренных пунктом 2 статьи 5-1 Закона Республики Казахстан «О банках и банковской деятельности в Республике Казахстан», нормы законодательства о государственных закупках не применяются." %}
+        </p>
+        <a href="/zakup" class="fin-button">
+            {% trans "Внутренние закупки" %}
+        </a>
+	<a href="/oldzakup" target="_blank" class="fin-button" style="margin-top: 10px;">
+            {% trans "Архив закупок" %}
+</a>	
+    </div>
+</div>        </section>
+        {% include "web/includes/footer.html" %}
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        <link rel="stylesheet" property="stylesheet" href="/web/modules/system/assets/css/framework.extras.css">
+    </body>
+</html>

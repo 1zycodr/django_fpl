@@ -1,0 +1,147 @@
+{% load static %}
+{% load i18n %}
+{% get_current_language as L %}
+<div class="footer">
+    <div class="container">
+        <div class="footer-footer__inner d-flex justify-content-between">
+            <div class="footer-l">
+                <div class="social">
+                    <!--icon and link to facebook-->
+                    <a href="https://facebook.com/fplkz/" target="_blank" rel="noopener" class="face-desc">
+                        <div>
+                            <img src="/media/file/faceb.png" alt="">
+                        </div>
+                    </a>
+                    <a href="https://facebook.com/fplkz/" class="face-mob"> 
+                        <div>
+                            <img src="/media/file/faceb.png" alt="">
+                        </div>
+                    </a>
+                    <!--icon and link to telegram-->
+                    <!--a style="opacity: 0.5;"-->
+                    <a href="http://t.me/fplkz" target="_blank" rel="noopener" class="face-desc">
+                        <div>
+                            <img src="/media/file/tele.png" alt="">
+                        </div>
+                    </a>
+                    <a href="http://t.me/fplkz" class="face-mob">
+                        <div>
+                            <img src="/media/file/tele.png" alt="">
+                        </div>
+                    </a>                    
+                    <!--icon and link to yuotube-->
+                    <!--a style="opacity: 0.5;"-->
+                    <a href="https://youtube.com/channel/UCzwoWNHzLGjHNg88AqYJdAg" target="_blank" rel="noopener" class="face-desc">
+                        <div>
+                            <img src="/media/file/youtube.png" alt="">
+                        </div>
+                    </a>
+                    <a href="https://youtube.com/channel/UCzwoWNHzLGjHNg88AqYJdAg" class="face-mob">
+                        <div>
+                            <img src="/media/file/youtube.png" alt="">
+                        </div>
+                    </a>                    
+                    <!--icon and link to instagram-->
+                    <!--a style="opacity: 0.5;"-->
+                    <a href="https://instagram.com/fplkz?igshid=npcmy8m81aoq" target="_blank" rel="noopener" class="face-desc">
+                        <div>
+                            <img src="/media/file/insta.png" alt="">
+                        </div>
+                    </a> 
+                    <a href="https://instagram.com/fplkz?igshid=npcmy8m81aoq" class="face-mob">
+                        <div>
+                            <img src="/media/file/insta.png" alt="">
+                        </div>
+                    </a>                    
+                </div>
+                <div style="margin-top: 15px">
+                <a href="/oldfpl" style="    font-family: Montserrat;
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 15px;
+                            line-height: 5px;
+                            color: #FFFFFF;" target="_blank">{% trans "Старая версия сайта" %}</a>
+                            </div>
+            </div>
+            <div class="footer-c">
+                <div class="footer-c__menu">
+                    <ul>
+                        <li><a href="/">{% trans "Главная" %}</a></li>
+                        <li><a href="/zakup-main">{% trans "Закупки" %}</a></li>
+                        <li><a href="/news-page">{% trans "Новости" %}</a></li>
+                        <li><a href="/contact">{% trans "Контакты" %}</a></li>
+                        <!-- <li class="fc-vers" style="margin-top: 110px;"><a href="/oldfpl" style="    font-family: Montserrat;
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 15px;
+                            line-height: 5px;
+                            color: #FFFFFF;">{% trans "Старая версия сайта" %}</a></li> -->
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-r d-flex">
+                <div class="footer-r__left">
+                    <p style="margin-bottom: 17px;    font-family: Montserrat;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 24px;
+                    line-height: 30px;
+                    color: #FFFFFF; margin-top: 0;">{% trans "О фонде" %}</p>
+                    <ul>
+                        <li><a href="/ofond">{% trans "Информация о Фонде" %}</a></li>
+                        <li><a href="/main-info">{% trans "Основная деятельность" %}</a></li>
+                        <li><a href="/rukovodstvo2">{% trans "Руководство" %}</a></li>
+                        <li><a href="/org-struktura">{% trans "Организационная структура" %}</a></li>
+                        <li><a href="/godovoi-otchet">{% trans "Финансовая отчетность" %}</a></li>
+                        <li><a href="/struktura">{% trans "Дочерние организации" %}</a></li>
+                        <li><a href="/akti">{% trans "Нормативно-правовая база" %}</a></li>
+                    </ul>
+                </div>
+                <div class="footer-r__right">
+                    <p style="margin-bottom: 17px; font-family: Montserrat;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 24px;
+                    line-height: 30px;
+                    color: #FFFFFF;">{% trans "Реализация активов" %}</p>
+                    <ul>
+                        <li><a href="/active-page">{% trans "Каталог имущества" %}</a></li>
+                        <li><a href="/step2">
+                            {% trans "Инфографика по регистрации и участию на портале государственного реестра" %}
+                        </a></li>
+                        <li><a href="/step3">
+                            {% trans "Инфографика по оформлению сделки" %}
+                        </a></li>
+                        <li><a href="/build-page">
+                            {% trans "Перечень имущества дочерних организаций к реализации" %}
+                        </a></li>
+                        <li><a href="bp-rek">{% trans "Реализация имущества и имущественных прав в рамках работы по правам требования" %}</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            {% if L == 'ru' %}
+            Все права защищены © 2020. АО «Фонд проблемных кредитов» 
+            {% elif L == 'en' %}
+            All rights reserved © 2020. JSC «FUND OF PROBLEM LOANS» 
+            {% elif L == 'kk' %}
+            Барлық құқықтар сақталған © 2020. AҚ «ПРОБЛЕМАЛЫҚ КРЕДИТТЕР ҚОРЫ»
+            {% endif %}
+        </div>
+    </div>
+    
+</div>
+<div class="up"></div>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<script src="{% static "js/main.js"%}"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-178506308-1"></script>
+
+<!--<script>
+    for(let item of document.querySelectorAll('a')) {
+        item.setAttribute('target', '_blank')
+    }
+</script> -->
+

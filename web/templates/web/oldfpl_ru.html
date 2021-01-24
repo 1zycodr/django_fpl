@@ -1,0 +1,19 @@
+{% load static %}
+{% load i18n %}
+{% get_current_language as L %}
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{% trans "Старый сайт" %}</title>
+    </head>
+    <body style="width: 100%; height: 100%;">
+        {% if L == 'ru' %}
+            <iframe src="https://aquatropic.kz/fpl/ru/" frameborder="0" height="1750px" width="100%"></iframe>
+        {% elif L == 'kk' %}
+            <iframe src="https://aquatropic.kz/fpl/kk/" frameborder="0" height="1750px" width="100%"></iframe>
+        {% elif L == 'en' %}
+            <iframe src="https://aquatropic.kz/fpl/en/" frameborder="0" height="1750px" width="100%"></iframe>
+        {% endif %}
+    </body>
+</html>

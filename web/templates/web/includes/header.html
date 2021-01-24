@@ -1,0 +1,260 @@
+{% load i18n %}
+{% load static %}
+{% get_current_language as LANGUAGE_CODE %}
+<div class="header">  
+    <div class="header-top">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="logo d-flex">
+                <div class="logo-img">
+                    <a href="/">
+                        {% if LANGUAGE_CODE == 'ru' %}
+                        <img src="/media/file/Group_37.png" alt="" style="">
+                        {% elif LANGUAGE_CODE == 'en' %}
+                        <img src="/media/file/Group_50.png" alt="" style="">
+                        {% elif LANGUAGE_CODE == 'kk' %}
+                        <img src="/media/file/Group_51.png" alt="" style="">
+                        {% endif %}
+                    </a>
+                </div>
+            </div>
+            <div class="lang-date">
+                <div class="search">
+                    <form action="/search-page">
+                        <input type="text" value="" name="find" placeholder="{% trans "Поиск" %}">
+                        <input type="submit" value="">
+                    </form>
+                </div>
+                <div class="lang">
+                    <form class="formmm" action="{% url 'set_language' %}" method="post">
+                        {% csrf_token %}
+                        <input name="next" type="hidden" value="{{ request.get_full_path|slice:"3:" }}">
+                        <select name="language" id="lang" onchange="document.querySelector('.formmm').submit()" style="border: none; outline: none;">
+                            {% get_current_language as LANGUAGE_CODE %}
+                            <p>{{ LANGUAGE_CODE }}</p>
+                            {% get_available_languages as LANGUAGES %}
+                            {% get_language_info_list for LANGUAGES as languages %}
+                            {% for language in languages %}
+                                <option value="{{ language.code }}" 
+                                {% if language.code == LANGUAGE_CODE %} selected {% endif %}> 
+                                    {{ language.name_local }}{% if language.name_local == 'Қазақ' %}ша{% endif %}
+                                </option>
+                            {% endfor %}
+                        </select>
+                    </form>
+                </div>
+                <div class="date">
+                    <p>{% trans "Пн-Пт" %} 09:00-18:30</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="sub-menu" class="sub-menu">
+        <div class="container">
+            <div id="mob-lang" class="lang-date">
+                <div class="lang">
+                    <form class="formmm2" action="{% url 'set_language' %}" method="post">
+                        {% csrf_token %}
+                        <input name="next" type="hidden" value="{{ request.get_full_path|slice:"3:" }}">
+                        <select name="language" id="lang" onchange="document.querySelector('.formmm2').submit()" style="border: none; outline: none;">
+                            {% get_current_language as LANGUAGE_CODE %}
+                            <p>{{ LANGUAGE_CODE }}</p>
+                            {% get_available_languages as LANGUAGES %}
+                            {% get_language_info_list for LANGUAGES as languages %}
+                            {% for language in languages %}
+                                <option value="{{ language.code }}" 
+                                {% if language.code == LANGUAGE_CODE %} selected {% endif %}> 
+                                    {{ language.name_local }}{% if language.name_local == 'Қазақ' %}ша{% endif %}
+                                </option>
+                            {% endfor %}
+                        </select>
+                    </form>
+                </div>
+                <div class="date">
+                    <p>{% trans "Пн-Пт" %} 09:00-18:30</p>
+                </div>
+            </div>
+            <div class="form-search__icon-mobile">
+                <img src="/media/file/search-icon-form.png" alt="">
+            </div>
+
+            <!-- начало меню десктоп -->
+            <nav class="animenu" role="navigation" aria-label="Menu" id="desctop-menu">
+                <ul class="animenu__nav" style="margin-bottom: 0;">
+                  <li><a href="/">{% trans "Главная" %}</a></li>
+
+                  <!-- МЕНЮ С ДОП ПУНКТАМИ. КОПИРУЕМ , ЗАМЕНЯЕМ ССЫЛКИ И ТЕКСТ, ТО ЧТО НЕ НУЖНО - УДАЛЯЕМ -->
+                  <li>
+                    <a  class="animenu__nav__hasDropdown" aria-haspopup="true">{% trans "О Фонде" %}</a>
+                    <ul class="animenu__nav__dropdown" aria-label="submenu" role="menu" id="sub-sub-item">
+                      <!-- ПЕРВЫЙ ЭЛЕМЕНТ ВЫПАВШЕГО МЕНЮ. ПРИ НАВЕДЕНИИ НА КОТОРЫЙ ВЫПАДАЕТ UL-СПИСОК НИЖЕ (CLASS="TEST-SUB__ITEM1") -->
+                      <li id="sub-sub-li-1"><a  role="menuitem" id="sub-a">{% trans "О нас" %}</a></li>
+                      <ul id='test-sub' class="test-sub__item1">
+                              <li><a href="/main-info">{% trans "Основная деятельность" %}</a></li>
+                              <li><a href="/ofond">{% trans "Миссия. Видение" %}</a></li>
+                              <li><a href="/strateg-napr">{% trans "Стратегические направления" %}</a></li>
+                              <li><a href="/org-struktura">{% trans "Организационная структура" %}</a></li>
+                          </ul>
+                    <!-- ЗДЕСЬ КОНЕЦ ПЕРВОГО ВЫПАВШЕГО ЭЛЕМЕНТА В МЕНЮ. ДАЛЕЕ НАЧИНАЕТСЯ СЛЕДУЩИЙ. ДЕЙСТВИЯ РОВНО ТАКИЕ ЖЕ КАК И С ПЕРВЫМ ^ -->
+                      <li id="sub-sub-li-2"><a  role="menuitem" id="sub-a">{% trans "Руководство Фонда" %}</a></li>
+                          <ul id='test-sub' class="test-sub__item2">
+                              <li><a href="/rukovodstvo2">{% trans "Совет директоров" %}</a></li>
+                              <li><a href="/comitet-func">{% trans "Комитеты Совета директоров" %}</a></li>
+                              <li><a href="/sostav-pravlenia">{% trans "Правление" %}</a></li>
+                          </ul>
+                      <li id="sub-sub-li-3"><a  role="menuitem" id="sub-a">{% trans "Корпоративное управление" %}</a></li>
+                          <ul id='test-sub' class="test-sub__item3">
+                              <li><a href="/riski">{% trans "Управление рисками" %}</a></li>
+                              <li><a href="/kodeks">{% trans "Принципы корпоративного управления" %}</a></li>
+                              <li><a href="/principi">{% trans "Этические принципы" %}</a></li>
+                              <li><a href="/build-page-divi">{% trans "Дивидендная политика" %}</a></li>
+                              <li><a href="/build-page-razv">{% trans "Устойчивое развитие" %}</a></li>
+                              <li><a href="/akti">{% trans "Нормативно-правовая база" %}</a></li>
+                          </ul>
+                      <li id="sub-sub-li-4"><a  role="menuitem" id="sub-a">{% trans "Отчетность" %}</a></li>
+                          <ul id='test-sub' class="test-sub__item4">
+                              <li><a href="/audit">{% trans "Внешний аудит" %}</a></li>
+                              <li><a href="/godovoi-otchet">{% trans "Годовые отчеты" %}</a></li>
+                          </ul>
+                      <li><a href="/struktura" role="menuitem" id="sub-a">{% trans "Структура активов и дочерние организации" %}</a></li>
+                    </ul>
+                  </li>
+                  <!-- КОНЕЦ МЕНЮ С ДОП ПУНКТАМИ -->
+
+
+
+                  <!-- ЕСЛИ НУЖЕН ВЫПАДАЮЩИЙ СПИСОК БЕЗ ДОПОЛНИТЕЛЬНЫХ ПОДПУНКТОВ, КОПИРУЕМ ПОЛНОСТЬЮ ЭТОТ LI ЭЛЕМЕНЕТ, ЗАМЕНЯЕМ ССЫЛКИ И ТЕКСТ -->
+                  <li>
+                    <a id="sub-sub-li-1"><a  role="menuitem" class="animenu__nav__hasDropdown">{% trans "Реализация активов" %}</a>
+                    <ul class="animenu__nav__dropdown" aria-label="submenu" role="menu" id="sub-sub-item">
+                        <li><a href="/active-page" id="sub-a">{% trans "Каталог имущества" %}</a></li>
+                        <li><a href="/step2" id="sub-a">
+                            {% trans "Инфографика по регистрации и участию на портале государственного реестра" %}
+                        </a></li>
+                        <li><a href="/step3" id="sub-a">
+                            {% trans "Инфографика по оформлению сделки" %}
+                        </a></li>
+                        <li><a href="/build-page" id="sub-a">
+                            {% trans "Перечень имущества дочерних организаций к реализации" %}
+                        </a></li>
+                        <li><a href="/bp-rek" id="sub-a">{% trans "Реализация имущества и имущественных прав в рамках работы по правам требования" %}</a></li>
+                    </ul>
+                  </li>
+                  <!-- КОНЕЦ СПИСКА БЕЗ ДОП ПУНКТОВ -->
+
+
+                  <li><a href="/zakup-main">{% trans "Закупки" %}</a></li>  <!-- ЕСЛИ НУЖЕН ПУНКТ МЕНЮ БЕЗ ВЫПАДАЮЩЕГО СПИСКА, КОПИРУЕМ ЭТО И ЗАМЕНЯЕМ ССЫЛКУ И ТЕКСТ -->
+                  <li><a href="/news-page">{% trans "Новости" %}</a></li>
+                  <li><a href="/analitics">
+                      {% if LANGUAGE_CODE == 'ru' %}
+                        Аналитика
+                      
+                      {% elif LANGUAGE_CODE == 'kk' %}
+                        Талдау
+            
+                      {% elif LANGUAGE_CODE == 'en' %}
+                        Analitics
+                      {% endif %}
+                      </a></li>
+                  <li><a href="/contact">{% trans "Контакты" %}</a></li>
+                </ul>
+              </nav>
+            <!-- конец меню десктоп -->
+
+            <!-- начало мобильной версии меню -->
+            <div class="respons-menu">
+                <label for="ch-bt" class="resp-button">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <input id="ch-bt" type="checkbox">
+                <div class="adapt-menu">
+                <div class="close-icon__menu">
+                    <span class="left-icon"></span>
+                    <span class="right-icon"></span>
+                </div>
+                <nav class="animenu" role="navigation" aria-label="Menu" id="mobile-vers">
+                <ul class="animenu__nav">
+                  <li><a href="/">{% trans "Главная" %}</a></li>
+                  <li>
+                    <a class="animenu__nav__hasDropdown ofond-menu" aria-haspopup="true">{% trans "О Фонде" %}</a>
+                    <ul class="animenu__nav__dropdown ofond-down" aria-label="submenu" role="menu" id="sub-sub-item">
+                      <li id="sub-sub-li-1"><a class="onas" role="menuitem" id="sub-a">{% trans "О нас" %}</a></li>
+                      <ul id='test-sub' class="test-sub__item1 onas-menu">
+                              <li><a href="/main-info">{% trans "Основная деятельность" %}</a></li>
+                              <li><a href="/ofond">{% trans "Миссия. Видение" %}</a></li>
+                              <li><a href="/strateg-napr">{% trans "Стратегические направления" %}</a></li>
+                              <li><a href="/org-struktura">{% trans "Организационная структура" %}</a></li>
+                          </ul>
+                      <li id="sub-sub-li-2"><a  role="menuitem" id="sub-a" class="ruk">{% trans "Руководство Фонда" %}</a></li>
+                          <ul id='test-sub' class="test-sub__item2 ruk-menu">
+                              <li><a href="/rukovodstvo2">{% trans "Совет директоров" %}</a></li>
+                              <li><a href="/comitet-func">{% trans "Комитеты Совета директоров" %}</a></li>
+                              <li><a href="/sostav-pravlenia">{% trans "Правление" %}</a></li>
+                          </ul>
+                      <li id="sub-sub-li-3"><a  role="menuitem" id="sub-a" class="korp">{% trans "Корпоративное управление" %}</a></li>
+                          <ul id='test-sub' class="test-sub__item3 korp-menu">
+                              <li><a href="/riski">{% trans "Управление рисками" %}</a></li>
+                              <li><a href="/kodeks">{% trans "Принципы корпоративного управления" %}</a></li>
+                              <li><a href="/principi">{% trans "Этические принципы" %}</a></li>
+                              <li><a href="/build-page-divi">{% trans "Дивидендная политика" %}</a></li>
+                              <li><a href="/build-page-razv">{% trans "Устойчивое развитие" %}</a></li>
+                              <li><a href="/akti">{% trans "Нормативно-правовая база" %}</a></li>
+                          </ul>
+                      <li id="sub-sub-li-4"><a  role="menuitem" id="sub-a" class="oth">{% trans "Отчетность" %}</a></li>
+                          <ul id='test-sub' class="test-sub__item4 oth-menu">
+                              <li><a href="/audit">{% trans "Внешний аудит" %}</a></li>
+                              <li><a href="/godovoi-otchet">{% trans "Годовые отчеты" %}</a></li>
+                          </ul>
+                      <li><a href="/struktura" role="menuitem" id="sub-a">{% trans "Структура активов и дочерние организации" %}</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a class="animenu__nav__hasDropdown real" aria-haspopup="true">{% trans "Реализация активов" %}</a>
+                        <ul class="animenu__nav__dropdown real-menu" aria-label="submenu" role="menu" id="sub-sub-item">
+                            <li><a href="/active-page" id="sub-a">{% trans "Каталог имущества" %}</a></li>
+                            <li><a href="/step2" id="sub-a">
+                                {% trans "Инфографика по регистрации и участию на портале государственного реестра" %}
+                            </a></li>
+                            <li><a href="/step3" id="sub-a">
+                                {% trans "Инфографика по оформлению сделки" %}
+                            </a></li>
+                            <li><a href="/build-page" id="sub-a">
+                                {% trans "Перечень имущества дочерних организаций к реализации" %}
+                            </a></li>
+                            <li><a href="/bp-rek" id="sub-a">{% trans "Реализация имущества и имущественных прав в рамках работы по правам требования" %}</a></li>
+                        </ul>
+                  </li>
+                  <li><a href="/zakup-main">{% trans "Закупки" %}</a></li>
+                  <li><a href="/news-page">{% trans "Новости" %}</a></li>
+
+                  <li><a href="/analitics">
+                      {% if LANGUAGE_CODE == 'ru' %}
+                        Аналитика
+                      {% elif LANGUAGE_CODE == 'kk' %}
+                        Талдау
+            
+                      {% elif LANGUAGE_CODE == 'en' %}
+                        Analitics
+                      {% endif %}
+                      </a></li>
+                    
+                  <li><a href="/contact">{% trans "Контакты" %}</a></li>
+                </ul>
+              </nav>
+              
+                </div>
+            </div>
+            <!-- КОНЕЦ МОБИЛЬНОЙ ВЕРСИИ МЕНЮ -->
+        </div>
+    </div>
+    <div class="progress-container">
+        <div class="progress-bar" id="myBar"></div>
+    </div> 
+</div>
+<div class="search2" style="display: none;">
+    <form action="/search-page">
+        <input type="text" value="" class="searchss" placeholder="{% trans "Поиск" %}" name="find">
+        <input type="submit" value="" style="display: none;">
+    </form>
+   </div>

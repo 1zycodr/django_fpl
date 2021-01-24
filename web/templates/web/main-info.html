@@ -1,0 +1,94 @@
+{% load static %}
+{% load i18n %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>{% trans "Основная деятельность" %}</title>
+        <meta name="description" content="Фонд реализует активы, взысканные по неработающим займам, включая земельные участки, коммерческую недвижимость, движимое имущество. Приглашаем потенциальных покупателей приобрести имущество на торгах, проводимых на электронной торговой площадке государственного реестра.">
+        <meta name="title" content="">
+        <link rel="canonical" href="https://amp.dev/ru/documentation/guides-and-tutorials/start/create/basic_markup/">
+        <script async src="https://cdn.ampproject.org/v0.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{% static "css/style.css"%}">
+        <link rel="stylesheet" href="{% static "css/home.css"%}">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Mukta&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Rhodium+Libre&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" href="/media/file/favicon_tINNSHM.ico" >
+        <style>
+            body {
+                text-align: justify;
+            }
+        </style>
+    </head>
+    <body>
+
+        {% include "web/includes/header.html" %}
+        {% get_current_language as LANGUAGE_CODE %}
+        <style>
+            /*ul {
+                padding-left: 60px;
+            }*/
+            .ulintext {
+                  padding-left: 60px;
+            }
+        </style>
+        <section id="layout-content">
+            <div class="main-info__top-img"></div>
+            <h1 class="name44">{% trans "Основная деятельность" %}</h1>
+            <div class="container" style="margin-bottom: 70px;">
+                <div class="main-info__content">
+                    <!-- <h1 class="fond-title">
+                    Основная информация
+                    </h1> -->
+                    <h2 id="fpk-result__title" class="bold-start" style="margin-bottom: 34px; margin-top:70px;">{% trans "Приобретение активов" %}</h2>
+                    <p>
+                        {% trans "Приобретение активов Фондом производится, при условии их соответствия критериям, установленным Требованиями к приобретаемым (приобретенным) Фондом активам и правам требования, утвержденными приказом Министра финансов Республики Казахстан от 23 февраля 2018 года № 279.<br> Приобретение активов Фондом может осуществляться у Национального Банка РК – пп.4 п.2 ст.5-1 Закона о банках, банков второго уровня и юридических лиц, ранее являвшихся банками." %}
+                    </p>
+                    <h2 id="fpk-result__title" class="bold-start" style="margin-top: 35px;margin-bottom: 35px;">
+                        {% trans "Управление приобретенными активами" %}
+                    </h2>
+                    <p>
+                        <span class="bold-start__black">
+                            {% trans "Управление приобретенными активами, их содержание и (или) реализация, осуществляется Фондом одним из следующих способов:" %}
+                        </span>
+                        <br>
+                        <span style="padding-left: 60px">
+                        {% trans "<ul><li>Фондом самостоятельно;</li><li>Банками или юридическими лицами, ранее являвшимися банками, у которых Фондом были приобретены активы;</li><li>Дочерними и (или) ассоциированными организациями Фонда;</li><li>Доверительными управляющими;</li><li>Иными финансовыми организациями, профессиональными экспертами, международными аудиторами и аудиторскими организациями.</li></ul>" %}
+                        </span>
+                    </p>
+                    <p>
+                        <span class="bold-start__black">
+                            {% trans "Управление приобретенными активами и их реализации включает в себя следующие мероприятия:" %} 
+                        </span>
+                        <br>
+                        <span  style="padding-left: 60px">
+                        {% trans "<ul><li>Реструктуризация и оздоровление;</li><li>Взыскание задолженности;</li><li>Реализация активов;</li><li>Передача прав требования и активов в государственную собственность в порядке, определяемым законодательством Республики Казахстан о государственном имуществе;</li><li>Имущественный наем (аренда);</li><li>Передача в доверительное управление;</li><li>Консервация активов;</li><li>Реализация инвестиционных проектов;</li><li>Иные мероприятия, определяемые Фондом.</li></ul>" %}
+                        </span>
+                    </p>
+                    <p>
+                        <span class="bold-start__black">
+                            {% trans "Порядок и условия проведения указанных мероприятий определяются внутренними документами Фонда." %}
+                        </span>
+                    </p>
+                    <p>
+                        <br>
+                        {% trans "Реализация имущества, находящегося в залоге по правам требований, выкупленным Фондом у банков или юридических лиц, ранее являвшимися банками, осуществляется: <ul><li>В рамках исполнительного производства в соответствии с Законом Республики Казахстан от 2 апреля 2010 года «Об исполнительном производстве и статусе судебных исполнителей»;</li><li>В рамках процедур реабилитации и банкротства в соответствии с Законом Республики Казахстан от 7 марта 2014 года «О реабилитации и банкротстве»;</li><li>В иных случаях – в соответствии с внутренними документами Фонда и действующим законодательством Республики Казахстан.</li></ul>" %}
+                    </p>
+                </div>
+            </div>
+        </section>
+
+            {% include "web/includes/footer.html" %}
+
+            <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+            <!--link rel="stylesheet" property="stylesheet" href="/web/modules/system/assets/css/framework.extras.css"-->
+    </body>
+</html>

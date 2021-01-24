@@ -1,0 +1,180 @@
+{% load static %}
+{% load i18n %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>{% trans "Результаты поиска" %}</title>
+        <meta name="description" content="Фонд реализует активы, взысканные по неработающим займам, включая земельные участки, коммерческую недвижимость, движимое имущество. Приглашаем потенциальных покупателей приобрести имущество на торгах, проводимых на электронной торговой площадке государственного реестра.">
+        <meta name="title" content="">
+        <link rel="canonical" href="https://amp.dev/ru/documentation/guides-and-tutorials/start/create/basic_markup/">
+        <script async src="https://cdn.ampproject.org/v0.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{% static "css/style.css"%}">
+        <link rel="stylesheet" href="{% static "css/home.css"%}">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Mukta&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Rhodium+Libre&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" href="/media/file/favicon_tINNSHM.ico" >
+    </head>
+    <body>
+
+        {% include "web/includes/header.html" %}
+        
+        <section id="layout-content">
+            <div id="cards-active" class="container" style="margin-bottom: 70px;">
+                <div class="active-search">
+                    {% if assets|length != 0 %}
+                    <h2 style="margin-bottom: 50px; margin-top: 50px;">{% trans "Активы" %}</h2>
+                    {% for asset in assets %}
+                    <div class="active-item d-flex col-lg">
+                        <div class="active-item__img">
+                            <img src="/media/{{ asset.image }}" alt="">
+                        </div>
+                        <a href="/asset/{{ asset.id }}">
+                            <div class="active-item__content">
+                                <div class="active-item__top d-flex">
+                                    <p>
+                                        {{ asset.title }}
+                                        <span class="estate-type">{{ asset.region }}</span>
+                                    </p>
+                                    <div class="active-item__view d-flex">
+                                        <p>{{ asset.visits }}</p>
+                                        <div>
+                                            <img src="/media/file/Eye.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="active-item__middle">
+                                    <p>
+                                        {{ asset.location }}
+                                    </p>
+                                    <button id="active-item-page" class="price-down">
+                                        {{ asset.get_as_type_display }}
+                                    </button>
+                                </div>
+                                <div class="active-item__bottom d-flex">
+                                    <div class="active-bottom__left">
+                                        <div class="change-div d-flex">
+                                            <p>{% trans "Дата проведения торгов:" %}</p>
+                                            <h6>{{ asset.performance_date }}</h6>
+                                        </div>
+                                        {% if asset.min_price != null %}
+                                        <div class="price-change-div d-flex">
+                                            <p>{% trans "Минимальная цена:" %}</p>
+                                            <h6>{{ asset.min_price }}</h6>
+                                        </div>
+                                        {% endif %}
+                                    </div>
+                                    <div class="active-bottom__right">
+                                        <h5>{{ asset.price }} <span class="stock">kzt</span></h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                {% endfor %}
+                </div>
+                {% endif %}
+                {% if news|length != 0 %}
+                <h2 style="margin-bottom: 50px; margin-top: 50px;">{% trans "Новости" %}</h2>
+                <div class="news-search d-flex justify-content-between flex-wrap">
+                    
+                    {% for news in news %}
+                        <a href="/news/{{ news.id }}">
+                            <div class="news-item">
+                                <img src="/media/{{ news.image }}" alt="">
+                                <div class="news-img__text">
+                                    <p>
+                                        {{ news.title }}
+                                    </p>
+                                    <h6 class="news-date__publish">
+                                        {{ news.creation_date|date:'d F Y' }}
+                                    </h6>
+                                </div>
+                            </div>
+                        </a>
+                    {% endfor  %}
+                </div>
+                {% endif %}
+                {% if zakupki|length != 0 %}
+                <div class="zakup-search">
+                    <h2 style="margin-bottom: 50px; margin-top: 50px;">{% trans "Закупки" %}</h2>
+                    {% for purchase in zakupki %}
+                        <div class="zakup-item">
+                            <h1 class="zakup-item__title">
+                                {{ purchase.title }}
+                            </h1>
+                            <h6 class="zakup-item__date">
+                                {{ purchase.creation_date }}
+                            </h6>
+                            <p class="zakup-item__par">
+                                {{ purchase.description|safe }}
+                            </p>
+                            <a href="/purchase/{{ purchase.id }}" class="zakup-item__more">{% trans "Подробнее" %}</a>
+                        </div>
+                    {% endfor %}
+                </div>
+                {% endif %}
+                {% if itogi|length != 0 %}
+                <div class="itogi-search">
+                    <h2 style="margin-bottom: 50px; margin-top: 50px;">{% trans "Итоги" %}</h2>
+                    {% for purchase in itogi %}
+                        <div class="zakup-item">
+                            <h1 class="zakup-item__title">
+                                {{ purchase.title }}
+                            </h1>
+                            <h6 class="zakup-item__date">
+                                {{ purchase.creation_date }}
+                            </h6>
+                            <p class="zakup-item__par">
+                                {{ purchase.description|safe }}
+                            </p>
+                            <a href="/result/{{ purchase.id }}" class="zakup-item__more">{% trans "Подробнее" %}</a>
+                        </div>
+                    {% endfor %}
+                </div>
+                {% endif %}
+                
+                {% if documents|length != 0 %}
+                <div class="itogi-search">
+                    <h2 style="margin-bottom: 50px; margin-top: 50px;">{% trans "Документы" %}</h2>
+                    {% for document in documents %}
+                        <div class="zakup-item">
+                            <a href="/media/{{ document.file }}" style="color: black;"><h4>{{ document.title }}</h4></a>
+                        </div>
+                    {% endfor %}
+                </div>
+                {% endif %}
+                
+                {% if pages|length != 0 %}
+                <div class="itogi-search">
+                    <h2 style="margin-bottom: 50px; margin-top: 50px;">{% trans "Страницы" %}</h2>
+                    {% for page in pages %}
+                        <div class="zakup-item">
+                            <a href="{{ page.link }}" style="color: black;"><h4>{{ page.title }}</h4></a>
+                        </div>
+                    {% endfor %}
+                </div>
+                {% endif %}
+
+                {% if itogi|length == 0 and zakupki|length == 0 and news|length == 0 and assets|length == 0 and documents|length == 0 and pages|length == 0 %}
+                    <h2 style="margin-bottom: 50px; margin-top: 50px;">{% trans "Поиск не дал результатов!" %}</h2>
+                {% endif %}
+            </div>
+        </section>
+        
+        
+
+        {% include "web/includes/footer.html" %}
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        <link rel="stylesheet" property="stylesheet" href="/web/modules/system/assets/css/framework.extras.css">
+    </body>
+</html>

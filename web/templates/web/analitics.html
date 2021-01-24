@@ -1,0 +1,81 @@
+{% load static %}
+{% load i18n %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Аналитика</title>
+        <meta name="description" content="Фонд реализует активы, взысканные по неработающим займам, включая земельные участки, коммерческую недвижимость, движимое имущество. Приглашаем потенциальных покупателей приобрести имущество на торгах, проводимых на электронной торговой площадке государственного реестра.">
+        <meta name="title" content="">
+        <link rel="canonical" href="https://amp.dev/ru/documentation/guides-and-tutorials/start/create/basic_markup/">
+        <script async src="https://cdn.ampproject.org/v0.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{% static "css/style.css"%}">
+        <link rel="stylesheet" href="{% static "css/home.css"%}">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Mukta&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Rhodium+Libre&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" href="/media/file/favicon_tINNSHM.ico" >
+    </head>
+    <body>
+        {% include "web/includes/header.html" %}
+        {% get_current_language as LANGUAGE_CODE %}
+        <section id="layout-content">
+            {% if LANGUAGE_CODE == 'ru' %}
+            <div class="container" style="margin-top: 70px; margin-bottom: 70px;">
+                <h6 class="name44">Аналитика</h6>
+                <p align="justify">Фонд проблемных кредитов функционирует с 2012 года и, являясь ключевой квазигосударственной организацией в стране, специализирующейся на улучшении качества кредитных портфелей банков, за годы своей деятельности наработал уникальный опыт в сфере урегулирования неработающих займов и управления стрессовыми активами.</p>
+                <p align="justify">В целях изучения и внедрения наилучших практик в области работы с проблемными активами Фонд установил тесное сотрудничество с международными финансовыми организациями – МВФ, Всемирный банк, ЕБРР, АБР, компаниями по управлению стрессовыми активами Южной Кореи, Ирландии, Испании, Украины и др., а также Департаментом казначейства США.</p>
+                <p align="justify">Фонд проблемных кредитов на регулярной основе привлекает указанные организации для оказания технической и консультационной помощи для повышения эффективности своей деятельности.</p>
+                <p align="justify">С учетом наработанного Фондом опыта, а также опыта наших зарубежных партнеров в данном разделе будут представлены аналитические материалы о мировой практике выкупа, управления и реализации проблемных активов, обзоры состояния банковского сектора Республики Казахстан и другие материалы.</p>
+                
+                <div class="analitics__card">
+
+                        <div class="analitics__item">
+                            <a href="/media/file/korea_experience.pdf" target="_blank">
+                                <img src="/media/img/pexels-pixabay-209224_2.png" alt="">
+                                <h1>Опыт Кореи</h1>
+                            </a>
+                        </div>   
+                        <div class="analitics__item">
+                            <a href="/media/file/overview_npl_01_11.pdf" target="_blank">
+                                <img src="/media/img/pexels-pixabay-209224_2.png" alt="">
+                                <h1>Обзор NPL</h1>
+                            </a>
+                        </div>             
+
+                    {% for item in o_list %}
+                        <!--div class="fin-god__item">
+                            <a href="/media/{{ item.file.file }}" target="_blank">
+                                <img src="/media/{{ item.image }}" alt="">
+                                <h1>{{ item.title }}</h1>
+                            </a>
+                        </div-->
+                    {% endfor %}
+                </div>
+            </div>
+            {% elif LANGUAGE_CODE == 'kk' %}
+            <div class="container" style="margin-top: 70px; margin-bottom: 70px;">
+                <h6 class="name44">Талдау</h6>
+                <p align="justify">Қайта құру кезеңінде</p>
+            </div>
+            {% elif LANGUAGE_CODE == 'en' %}
+            <div class="container" style="margin-top: 70px; margin-bottom: 70px;">
+                <h6 class="name44">Analitics</h6>
+                <p align="justify">On reconstruction</p>
+            </div>            
+            {% endif %}
+        </section>
+
+        {% include "web/includes/footer.html" %}
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        <link rel="stylesheet" property="stylesheet" href="/web/modules/system/assets/css/framework.extras.css">
+    </body>
+</html>

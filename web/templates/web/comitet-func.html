@@ -1,0 +1,104 @@
+{% load static %}
+{% load i18n %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>{% trans "Комитеты совета директоров и их функции" %}</title>
+        <meta name="description" content="Фонд реализует активы, взысканные по неработающим займам, включая земельные участки, коммерческую недвижимость, движимое имущество. Приглашаем потенциальных покупателей приобрести имущество на торгах, проводимых на электронной торговой площадке государственного реестра.">
+        <meta name="title" content="">
+        <link rel="canonical" href="https://amp.dev/ru/documentation/guides-and-tutorials/start/create/basic_markup/">
+        <script async src="https://cdn.ampproject.org/v0.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{% static "css/style.css"%}">
+        <link rel="stylesheet" href="{% static "css/home.css"%}">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Mukta&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Rhodium+Libre&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" href="/media/file/favicon_tINNSHM.ico" >
+        <style>
+            body {
+                text-align: justify;
+            }
+        </style>
+    </head>
+    <body>
+        {% include "web/includes/header.html" %}
+        {% get_current_language as LANGUAGE_CODE %}
+        <section id="layout-content">
+            <div class="container" style="margin-bottom: 70px;">
+    <h1 class="name44">
+            {% trans "Комитеты совета директоров и их функции" %}
+        </h1>
+    <div class="comitet-func">
+        <p class="comitet-par">
+            {% trans "Для проведения детального анализа и выработки рекомендаций по кругу наиболее важных вопросов до их рассмотрения на заседании Совета директоров в Фонде созданы следующие комитеты при Совете директоров." %}
+        </p>
+    </div>
+    <div class="comitet-bottom">
+        <div class="comitet-left">
+            <h1 class="bold-start">
+                {% trans "Комитет совета директоров фонда по рассмотрению вопросов внутреннего аудита" %}
+            </h1>
+            <p>
+                {% trans "Учрежден с целью организации эффективной системы контроля за финансово – хозяйственной деятельностью и соответствием деятельности Фонда законодательству и внутренним нормативным документам Фонда в целях повышения эффективности деятельности Фонда в долгосрочной перспективе. " %}
+                <br><br>
+                {% trans "Основными задачами являются разработка и предоставление рекомендаций Совету директоров для принятия решений по формированию и реализации политики Фонда по вопросам контроля в области финансово-хозяйственной деятельности Фонда, вопросам управления рисками, внутреннего и внешнего аудита Фонда." %}
+            </p>
+            <h2 class="gold-bold">
+                {% trans "Текущий состав Комитета" %}
+            </h2>
+            <p class="sostav-com">
+                
+                <strong>{% trans "Председатель Комитета" %}</strong> <br> 
+                {% trans "Кенесарин Сагир Есенгулович" %}
+                 <br> <br>
+                <strong>{% trans "Члены Комитета" %}</strong> <br> 
+                {% trans "Елшібаев Ержан Иманқұлұлы" %} <br>
+                {% trans "Турганалиев Елтинжал Рахматуллаевич." %}
+                 <br>
+            </p>
+        </div>
+        <div class="comitet-right">
+            <h5 class="bold-start">
+                {% trans "Комитет Совета директоров Фонда по рассмотрению вопросов стратегического планирования, кадров и вознаграждений, социальных вопросов." %} <br>
+            </h5>
+            <div class="com-right-bottom">
+                <div class="com-right__left">
+                    <p>
+                        {% trans "Создан с целью организации в Фонде системы социальных гарантий и льгот, привлечения высококвалифицированных работников, обладающих необходимым опытом работы, предоставления привлекаемым сотрудникам конкурентных условий на рынке труда для последующей реализации ими стратегических целей Фонда, организации эффективной системы стратегического планирования деятельности Фонда и контроля за реализацией стратегии, стратегического плана в целях повышения эффективности деятельности Фонда в долгосрочной перспективе." %}
+                    </p>
+                    <h2 class="gold-bold">
+                        {% trans "Текущий состав Комитета" %}
+                    </h2>
+                    <p class="sostav-com">
+                        <strong>{% trans "Председатель Комитета" %}</strong> <br> 
+                        {% trans "Турганалиев Елтинжал Рахматуллаевич" %} <br> <br>
+                        <strong>{% trans "Члены Комитета" %}</strong> <br> 
+                        {% trans "Тюреходжаева Инкар Абибуллаевна" %} <br> 
+                        {% trans "Ауезбаева Тальмира Есимхановна" %}. <br>
+                    </p>
+                </div>
+                <div class="com-right__right">
+                    <p>
+                        {% trans "Основными задачами Комитета являются разработка и предоставление рекомендаций Совету директоров для принятия решений по формированию и реализации политики Фонда по вопросам определения стратегических целей (стратегии развития) Фонда, реализации социальных программ, обеспечения льгот и гарантий, развития корпоративных социальных программ, осуществления мероприятий по охране и технике безопасности труда, формирования кадровой политики и политики мотивации работников Фонда, условий оплаты труда и премирования работников." %}
+
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>        </section>
+
+        {% include "web/includes/footer.html" %}
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        <link rel="stylesheet" property="stylesheet" href="/web/modules/system/assets/css/framework.extras.css">
+    </body>
+</html>

@@ -1,0 +1,82 @@
+{% load static %}
+{% load i18n %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>{% trans "Шаг 2: Инфографика по регистрации и участию на портале государственного реестра." %}</title>
+        <meta name="description" content="Фонд реализует активы, взысканные по неработающим займам, включая земельные участки, коммерческую недвижимость, движимое имущество. Приглашаем потенциальных покупателей приобрести имущество на торгах, проводимых на электронной торговой площадке государственного реестра.">
+        <meta name="title" content="">
+        <link rel="canonical" href="https://amp.dev/ru/documentation/guides-and-tutorials/start/create/basic_markup/">
+        <script async src="https://cdn.ampproject.org/v0.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{% static "css/style.css"%}">
+        <link rel="stylesheet" href="{% static "css/home.css"%}">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Mukta&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Rhodium+Libre&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" href="/media/file/favicon_tINNSHM.ico" >
+    </head>
+    <style>
+        p {
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+    </style>
+    <body>
+        {% include "web/includes/header.html" %}
+        {% get_current_language as LANGUAGE_CODE %}
+      
+        <section id="layout-content">
+            <div class="container" style="margin-top: 70px; margin-bottom: 70px;">
+    {% if LANGUAGE_CODE == 'ru' %}
+    <h1 class="name44">Шаг 2: Инфографика по регистрации и участию на портале государственного реестра.</h1>
+    <img class="step2-image__gr" src="/media/file/step2rusdesk.png" alt="" style="width: 100%; margin: auto;">
+    <img class="step2-image__adapt" src="/media/file/step2rusmob.png" alt="" style="width: 100%; margin: auto;">
+    {% elif LANGUAGE_CODE == 'kk' %}
+    <h1 class="name44">2 Қадам: Мемлекеттік тізілім порталында тіркеу және қатысу бойынша инфографика.</h1>
+    <img class="step2-image__gr" src="/media/file/step2kazdesk.png" alt="" style="width: 100%; margin: auto;">
+    <img class="step2-image__adapt" src="/media/file/step2kazmob.png" alt="" style="width: 100%; margin: auto;">
+    {% elif LANGUAGE_CODE == 'en' %}
+    <h1 class="name44">Step 2: Infographics on registration and participation on the state register portal.</h1>
+    <img class="step2-image__gr" src="/media/file/step2engdesk.png" alt="" style="width: 100%; margin: auto;">
+    <img class="step2-image__adapt" src="/media/file/step2engmob.png" alt="" style="width: 100%; margin: auto;">
+    {% endif %}
+
+    {% if LANGUAGE_CODE == 'ru' %}
+        <p style="text-align: center;">Данный видеоролик отражает историю одного торга для примера. Продолжительность видео более 44 минут.<br>Первый шаг торга начинается со второй минуты видеоролика.</p>
+    {% elif LANGUAGE_CODE == 'kk' %}
+        <p style="text-align: center;">Аталмыш бейнеролик мысал ретінде бір сауда-саттықтың тарихын көрсетеді. Бейнежазбаның ұзақтығы 44 минуттен асады. <br> Сауда-саттықтың бірінші қадамы бейнежазбаның екінші минутынан басталады.&nbsp;</p>
+    {% elif LANGUAGE_CODE == 'en' %}
+        <p></p>
+    {% endif %}
+
+    {% if LANGUAGE_CODE == 'ru' %}
+        <a class="st2-st" href="http://video.gosreestr.kz/vod/EA/Log/30269_230216.mp4" style="width: 160px; margin: auto;  margin-bottom: 20px;">Посмотреть видео</a>
+    {% elif LANGUAGE_CODE == 'kk' %}
+        <a class="st2-st" href="http://video.gosreestr.kz/vod/EA/Log/30269_230216.mp4" style="width: 160px; margin: auto;  margin-bottom: 20px;">Бейнежазбаны көру</a>
+    {% elif LANGUAGE_CODE == 'en' %}
+        <a class="st2-st" href="http://video.gosreestr.kz/vod/EA/Log/30269_230216.mp4" style="width: 160px; margin: auto;  margin-bottom: 20px;">Watch video</a>
+    {% endif %}
+
+    {% if LANGUAGE_CODE == 'ru' %}
+        <a class="st2-st" href="/step3">ШАГ 3 - Оформление сделки</a>
+    {% elif LANGUAGE_CODE == 'kk' %}
+        <a class="st2-st" href="/step3">3 Қадам - Мәмілені ресімдеу</a>
+    {% elif LANGUAGE_CODE == 'en' %}
+        <a class="st2-st" href="/step3">Step 3 - Making a deal</a>
+    {% endif %}
+
+</div>        </section>
+        {% include "web/includes/footer.html" %}
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        <link rel="stylesheet" property="stylesheet" href="/web/modules/system/assets/css/framework.extras.css">
+    </body>
+</html>

@@ -1,0 +1,77 @@
+{% load static %}
+{% load i18n %}
+{% get_current_language as LANGUAGE_CODE %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>{% trans "Миссия. Видение" %}</title>
+        <meta name="description" content="Фонд реализует активы, взысканные по неработающим займам, включая земельные участки, коммерческую недвижимость, движимое имущество. Приглашаем потенциальных покупателей приобрести имущество на торгах, проводимых на электронной торговой площадке государственного реестра.">
+        <meta name="title" content="">
+        <link rel="canonical" href="https://amp.dev/ru/documentation/guides-and-tutorials/start/create/basic_markup/">
+        <script async src="https://cdn.ampproject.org/v0.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{% static "css/style.css"%}">
+        <link rel="stylesheet" href="{% static "css/home.css"%}">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Mukta&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Rhodium+Libre&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" href="/media/file/favicon_tINNSHM.ico" >
+        <style>
+            body {
+                text-align: justify;
+            }
+        </style>
+    </head>
+    <body>
+        {% include "web/includes/header.html" %}
+        {% get_current_language as LANGUAGE_CODE %}
+        <section id="layout-content">
+            <div class="fond-header">
+    <div class="fond-img__top"></div>
+    <h4 class="name44">{% trans "Миссия. Видение" %}</h4>
+    <div class="container">
+        <div class="fond-content">
+            <p class="fond-par__one" style="margin-top: 70px;">
+                {% trans "АО «Фонд проблемных кредитов» был создан в 2012 году для оказания содействия банкам в процессе «очистки» баланса от «неработающих» займов в целях выполнения стратегической задачи по улучшению качества ссудного портфеля в банковской системе. С 2012 года по 2017 год управление Фондом осуществлял Национальный банк Республики Казахстан. В 2017 году Фонд был передан в управление Министерству финансов Республики Казахстан. Единственным акционером Фонда является Правительство Республики Казахстан." %}
+            </p>
+            <p class="fond-par__two">
+                <span id="fpk-result__title" class="bold-start">{% trans "Миссия Фонда" %}</span>   <br><br> {% trans "Содействие оздоровлению национальной экономики через:" %} <br>
+                <span class="fond-par__two-text">
+                    {% trans "Улучшение качества кредитных портфелей банков второго уровня путем выкупа неработающих активов; Вовлечение в экономический оборот неработающих активов посредством их оздоровления и реализации." %}
+                </span>
+            </p>
+            <p class="fond-par__three" style="margin-top: 30px;">
+                <span id="fpk-result__title" class="bold-start">{% trans "Стратегическое видение Фонда" %}</span> <br><br>
+                {% trans "Мы к 2027 году - профессиональная управляющая компания и национальный центр компетенций в области очистки ссудных портфелей финансовых организаций, реструктуризации активов и управления стрессовым портфелем. Фонд руководствуется Принципами, которые обеспечивают прозрачность процесса принятия решений и возвратность выделенных средств. Направлениями деятельности Фонда являются оздоровление банковского сектора и вовлечение в экономический оборот выкупленных неработающих займов. Стратегия Фонда в области управления активами направлена на оперативный и целевой возврат активов в экономический оборот при поддержании постоянного и планомерного денежного потока от реализации активов." %}
+                {% trans "Первым стратегическим направлением деятельности Фонда является оздоровление банковского сектора в обеспечении стабильного функционирования финансовой системы путем выработки и использования эффективных мер для очистки балансов банков второго уровня от «неработающих» займов. Вторым стратегическим направлением деятельности Фонда является вовлечение в экономический оборот выкупленных неработающих займов путем оздоровления выкупленных активов (реструктуризация, привлечение инвесторов, досудебная/судебная реализация, банкротство), реализация девелоперских проектов, а также реализации имущества Фонда и дочерних организаций." %}
+                
+
+            </p>
+            <p class="fond-par__four-text">
+                <span id="fpk-result__title" class="bold-start">{% trans "Членство в международных организациях" %}</span>  <br><br>
+                {% trans "Фонд проблемных кредитов является членом International Public Asset Management Company Forum (IPAF). IPAF это международная платформа по обмену успешных стратегий и знаний, а также сотрудничеству. IPAF был организован 7 (семью) азиатскими государственными компаниями по управлению активами: " %}
+    
+                <p class="fond-subpar">
+                    {% trans "Китайская компания по управлению активами (КУА) Cinda Co., Ltd. (КНР) <br>Китайская КУА Great Wall (КНР) <br>Китайская КУА Huarong Co., Ltd. (КНР) <br>Корейская корпорация по управлению активами (KAMCO) <br>Таиландская компания по управлению активами Sukhumvit Co., Ltd. <br>Вьетнамская компания по торговле долгами и активами (DATC) <br>Фонд проблемных кредитов (Казахстан) <br>IPAF начал работу в 2013 году и имеет 13 действующих членов включая Фонд. За период работы, IPAF провел 4 саммита и 6 обучающих семинаров." %}
+                </p>
+            </p>
+            <p class="fond-last-ar__text" style="margin-top: 35px;">
+                <span class="bold-start">{% trans "Меморандум о взаимопонимании с KAMCO" %}</span><br><br>
+                {% trans "В 2018 году между Фондом и Корпорацией по управлению активами Кореи (KAMCO) был подписан Меморандум о взаимопонимании. KAMCO был создан в 1962 году в качестве подведомственной организации Банка Развития Кореи в целях управления его проблемными активами. В дальнейшем, KAMCO был реорганизован и был наделен компетенцией по выкупу и оздоровлению неработающих кредитов финансовых учреждений." %}
+            </p>
+        </div>
+    </div>
+</div>        </section>
+        {% include "web/includes/footer.html" %}
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        <link rel="stylesheet" property="stylesheet" href="/web/modules/system/assets/css/framework.extras.css">
+    </body>
+</html>

@@ -1,0 +1,105 @@
+{% load static %}
+{% load i18n %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>{% trans "Структура активов и дочерние организации" %}</title>
+        <meta name="description" content="Фонд реализует активы, взысканные по неработающим займам, включая земельные участки, коммерческую недвижимость, движимое имущество. Приглашаем потенциальных покупателей приобрести имущество на торгах, проводимых на электронной торговой площадке государственного реестра.">
+        <meta name="title" content="">
+        <link rel="canonical" href="https://amp.dev/ru/documentation/guides-and-tutorials/start/create/basic_markup/">
+        <script async src="https://cdn.ampproject.org/v0.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{% static "css/style.css"%}">
+        <link rel="stylesheet" href="{% static "css/home.css"%}">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Mukta&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Rhodium+Libre&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" href="/media/file/favicon_tINNSHM.ico" >
+    </head>
+    <style>
+        .card-link {
+            box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+            transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+        }
+
+        .card-link:hover {
+            box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+        }
+    </style>
+    <body>
+        {% include "web/includes/header.html" %}
+        {% get_current_language as LANGUAGE_CODE %}
+        <section id="layout-content">
+            <div class="container">
+<h1 class="name44">{% trans "Структура активов и дочерние организации" %}</h1>
+    <div class="iforgraf d-flex justify-content-between flex-wrap flex-sm-wrap flex-md-nowrap flex-lg-nowrap ">
+        <div class="graf-left">
+            <h1 id="fpk-result__title" class="infgraf-title">
+                {% trans "Структура активов, тыс.тенге" %}
+                {% if LANGUAGE_CODE == 'ru' %}
+                <img src="/media/file/image_10.png" alt="">
+                {% elif LANGUAGE_CODE == 'en' %}
+                <img src="/media/file/image_20.png" alt="">
+                {% else %}
+                <img src="/media/file/image_19.png" alt="">
+                {% endif %}
+            </h1>
+        </div>
+        <div class="graf-right">
+            <h1 id="fpk-result__title" class="infgraf-title">
+                {% trans "Доля прав требования и инвестиционной собственности в структуре активов" %}
+                {% if LANGUAGE_CODE == 'ru' %}
+                <img src="/media/file/Group_22.png" alt="">
+                {% elif LANGUAGE_CODE == 'en' %}
+                <img src="/media/file/image_22.png" alt="">
+                {% else %}
+                <img src="/media/file/image_21.png" alt="">
+                {% endif %}
+            </h1>
+        </div>
+    </div>
+    <h1 class="name44">{% trans "Дочерние организации" %}</h1>
+    <div class="child-organization">
+        <div class="estate-card">
+            <a href="http://emc-company.kz" target="_blank">
+                <div class="card-link estate-top">
+                    
+                        <img src="/media/file/emc.png" alt="">
+                    
+                </div>
+             </a>
+            <div class="estate-content">
+                <h1 id="fpk-result__title">{% trans "АО «Estate Management Company» (EMC)" %}</h1>
+                <p>
+                    {% trans "Одна из ведущих компаний Республики Казахстан в сфере аренды и управления коммерческой недвижимостью. В портфеле EMC 14 объектов в городах Алматы и Нур-Султан общей площадью 144 тыс. кв.м. – современные офисы класса A, B, С, коммерческие площади и Esentai Apartments. EMC доверяют международные компании, входящие в топ-500 по версии Fortune. В числе основных арендаторов – Procter&Gamble, British American Tobacco, Kimberly-Clark, JP Mondelez и другие. EMC работает по принципу REIT (Real Estate Investment Trust). В декабре 2016 года компания получила статус Акционерного общества и прошла листинг на казахстанской фондовой бирже (KASE). Подробная информация о деятельности АО «Estate Management Company» находится на сайте" %} <a style="font-size: 16px;" href="http://emc-company.kz">http://emc-company.kz</a>
+                </p>
+            </div>
+        </div>
+        <div class="kazcom">
+            <div class="kazkom-top">
+                <img src="/media/file/kkr.png" alt="">
+            </div>
+            <div class="kazkom-content">
+                <h1 id="fpk-result__title">{% trans "ТОО «KAZKOM Realty»" %}</h1>
+                <p>
+                    {% trans "ТОО «KAZKOM Realty» является компанией, специализирующейся на управлении, развитии и реализации земельных участков. В собственности Компании находятся земельные участки общей площадью свыше 900 га, расположенные в основном в г. Алматы и Алматинской области. Реализация земельных участков осуществляется на конкурсной основе на веб-портале реестра государственного имущества. По интересующим вопросам можете обращаться по телефону: + 7 (727) 356-09-71 (вн.2085)." %}
+                </p>
+            </div>
+        </div>
+    </div>
+    
+    
+</div>        </section>
+        {% include "web/includes/footer.html" %}
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        <link rel="stylesheet" property="stylesheet" href="/web/modules/system/assets/css/framework.extras.css">
+    </body>
+</html>

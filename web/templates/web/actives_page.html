@@ -1,0 +1,163 @@
+{% load static %}
+{% load i18n %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>{% trans "Реализация имущества" %}</title>
+        <meta name="description" content="Фонд реализует активы, взысканные по неработающим займам, включая земельные участки, коммерческую недвижимость, движимое имущество. Приглашаем потенциальных покупателей приобрести имущество на торгах, проводимых на электронной торговой площадке государственного реестра.">
+        <meta name="title" content="">
+        <link rel="canonical" href="https://amp.dev/ru/documentation/guides-and-tutorials/start/create/basic_markup/">
+        <script async src="https://cdn.ampproject.org/v0.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{% static "css/style.css"%}">
+        <link rel="stylesheet" href="{% static "css/home.css"%}">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Mukta&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Rhodium+Libre&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" href="/media/file/favicon_tINNSHM.ico" >
+    </head>
+    <body>
+
+        {% include "web/includes/header.html" %}
+        {% get_current_language as LANGUAGE_CODE %}
+    
+        <h5 class="name44">{% trans "Реализация имущества" %}</h5>
+        <section id="layout-content">
+            <div id="cards-active" class="container d-flex" style="margin-bottom: 70px;">
+            <div class="filter">
+                {% if assets_list|length > 0 %}
+                    {% if LANGUAGE_CODE == 'ru' %}
+                    <a class="download-table" href="/dump/dump.xlsx">
+                        Перечень имущества
+                    </a>
+                    {% elif LANGUAGE_CODE == 'kk' %}
+                    <a class="download-table" href="#">
+                        Активтер тізімі
+                    </a>
+                    {% elif LANGUAGE_CODE == 'en' %}
+                    <a class="download-table" href="#">
+                        List of assets
+                    </a>
+                    {% endif %}
+                {% endif %}
+                <form action="/active-page">
+                    <div class="first-five__filter">
+                        <input class="ff_input" type="text" placeholder="{% trans 'Поиск по слову' %} " name="find">
+                        <select name="type" id="" style="font-size: 13px;">
+                            <option style="font-size: 13px;" value="default">{% trans "Тип торгов" %}</option>
+                            <option style="font-size: 13px;" value="IN">{% trans "На повышение цены" %}</option>
+                            <option style="font-size: 13px;" value="DE">{% trans "На понижение цены" %}</option>
+                            <!--option style="font-size: 13px;" value="AR">Аренда</option-->
+                        </select>
+                        <select name="category" id="" style="font-size: 13px;">
+                            <option style="font-size: 13px;" value="default">{% trans "Категории" %}</option>
+                            {% for val in sel_categories %}
+                                <option style="font-size: 13px;" value="{{ val.id }}">{{ val.name }}</option>
+                            {% endfor %}
+                        </select>
+                        <select name="region" id="" style="font-size: 13px;">
+                            <option style="font-size: 13px;" value="default">{% trans "Регионы" %}</option>
+                            {% for val in sel_regions %}
+                                <option style="font-size: 13px;" value="{{ val.id }}">{{ val.name }}</option>
+                            {% endfor %}
+                        </select>
+                    </div>
+                    <button class="filter-search__button">
+                        {% trans "ПОИСК" %}
+                    </button>
+                </form>
+            </div>
+            <div class="container">
+                <div class="active-item" style="border: none; margin-top: -25px; margin-bottom: 0;">
+                <h3>{% trans "Категории" %}</h3>
+                <div class="category-bread">
+                    {% for cat in categories %}    
+                            <a href="/active-page?type=default&category={{ cat.id }}&region=default" style="color: black"><h5 class="cat-item">{{ cat.name }} ({{ cat.count }})</h5></a> 
+                    {% endfor %}
+                </div>
+            </div>
+            {% if assets_list|length != 0  %}
+                {% for asset in assets_list %}
+                    <div class="active-item d-flex col-lg">
+                        <div class="active-item__img">
+                            <img src="/media/{{ asset.image }}" alt="">
+                        </div>
+                        <a href="/asset/{{ asset.id }}">
+                            <div class="active-item__content">
+                                <div class="active-item__top d-flex">
+                                    <h1>
+                                        {{ asset.title }}
+                                        <br>
+                                        <span class="estate-type">{{ asset.region }}</span>
+                                    </h1>
+                                    <div class="active-item__view d-flex">
+                                        <p>{{ asset.visits }}</p>
+                                        <div>
+                                            <img src="/media/file/Eye.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="active-item__middle">
+                                    <p>
+                                        {{ asset.location }}
+                                    </p>
+                                    <button id="active-item-page" class="price-down">
+                                        {{ asset.get_as_type_display }}
+                                    </button>
+                                </div>
+                                <div class="active-item__bottom d-flex">
+                                    <div class="active-bottom__left">
+                                        <div class="change-div d-flex">
+                                            <p>{% trans "Дата проведения торгов:" %}</p>
+                                            <h6>{{ asset.performance_date }}</h6>
+                                        </div>
+                                        {% if asset.min_price != null %}
+                                        <div class="price-change-div d-flex">
+                                            <p>{% trans "Минимальная цена:" %}</p>
+                                            <h6>{{ asset.min_price }}</h6>
+                                        </div>
+                                        {% endif %}
+                                    </div>
+                                    <div class="active-bottom__right">
+                                        <h5>{{ asset.price }} 
+                                                {% if LANGUAGE_CODE == 'ru' %} <span class="stock"> тг</span>
+                                                {% elif LANGUAGE_CODE == 'en' %} <span class="stock"> kzt</span> 
+                                                {% elif LANGUAGE_CODE == 'kk' %} <span class="stock"> тг</span> {% endif %}
+                                        </h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                {% endfor %}
+            {% else %}
+            {% if LANGUAGE_CODE == 'ru' %}
+                    <p class="fond-title">
+                        На данный момент нет имущества к реализации
+                    </p>
+                    {% elif LANGUAGE_CODE == 'kk' %}
+                    <p class="fond-title">
+                        Қазіргі уақытта сатылатын мүлік жоқ
+                    </p>
+                    {% elif LANGUAGE_CODE == 'en' %}
+                    <p class="fond-title">
+                        At the moment there is no property for sale
+                    </p>
+                    {% endif %}
+            {% endif %}
+            </div>
+        </div>        
+        </section>
+        {% include "web/includes/footer.html" %}
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        <link rel="stylesheet" property="stylesheet" href="/web/modules/system/assets/css/framework.extras.css">
+    </body>
+</html>
