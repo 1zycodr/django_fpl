@@ -29,9 +29,9 @@ SECRET_KEY = 'cgpq-6^lwyvdgc!dfv#2@$gf)r$_d+0%v%1)pl!woi1%phe96j'
 #CSRF_COOKIE_SECURE = True
 
 # SECURITY WARNING: don't run with debug turned on in production
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['*', '127.0.0.1', 'https://194.4.58.239/', 'fpl.kz', 'site.corp.fpl.kz']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -122,10 +122,10 @@ CACHE_MIDDLEWARE_SECONDS = 600
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'djangofpk',
-        'USER': 'fpkuser',
-        'PASSWORD': 'Fks#23pq17$Dbvr',
-        'HOST': 'localhost'
+        'NAME': '',
+        'USER': '',
+        'PASSWORD': '',
+        'HOST': ''
     }
 }
 
@@ -149,8 +149,8 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 
 EMAIL_HOST = 'smtp.gmail.com' 
-EMAIL_HOST_USER = 'sergeifadr@gmail.com' 
-EMAIL_HOST_PASSWORD = 'Akjalovs1991' 
+EMAIL_HOST_USER = ''
+EMAIL_HOST_PASSWORD = ''
 EMAIL_PORT = 587 
 EMAIL_USE_TLS = True
 
@@ -179,10 +179,10 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = '/static/'
-STATIC_ROOT = '/var/www/fpl.kz/static/'
+STATIC_ROOT = ''
 MEDIA_URL = '/media/'
 #MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-MEDIA_ROOT = '/var/www/fpl.kz/media/'
+MEDIA_ROOT = ''
 
 LOCALE_PATHS = (
     os.path.join(BASE_DIR, 'locale'),
